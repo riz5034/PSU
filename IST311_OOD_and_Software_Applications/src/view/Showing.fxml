@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="573.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="400.0" prefWidth="663.0" VBox.vgrow="ALWAYS">
+      <children>
+            <ImageView fitHeight="262.0" fitWidth="190.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/large_b4sAWNIbfXw4WTdc1wiVRBk2Vko.jpg" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <TextArea editable="false" layoutX="209.0" layoutY="14.0" prefHeight="154.0" prefWidth="131.0" text="Cast:&#10;Robert Hays&#10;Julie Hagerty&#10;Leslie Nielsen&#10;Peter Graves&#10;Lloyd Bridges&#10;Robert Stack&#10;Lorna Patterson">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </TextArea>
+            <ImageView fitHeight="55.0" fitWidth="209.0" layoutX="336.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/2000px-4.5_stars.svg.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="62.0" fitWidth="105.0" layoutX="209.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/2000px-RATED_PG.svg.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <TextArea editable="false" layoutX="350.0" layoutY="14.0" prefHeight="154.0" prefWidth="131.0" text="Directed by:&#10;David Zucker&#10;Jim Abrahams&#10;Jerry Zucker">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </TextArea>
+            <Button layoutX="14.0" layoutY="316.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="98.0" text="8:50am">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button layoutX="126.0" layoutY="316.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="98.0" text="11:35am">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button layoutX="238.0" layoutY="316.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="98.0" text="2:25pm">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button layoutX="350.0" layoutY="316.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="98.0" text="5:10pm">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button layoutX="461.0" layoutY="316.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="98.0" text="7:55pm">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label fx:id="label" layoutX="524.0" layoutY="14.0" minHeight="16" minWidth="40.0" prefHeight="17.0" prefWidth="43.0" text="Team 4" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="label1" layoutX="483.0" layoutY="31.0" minHeight="16" minWidth="43.0" prefHeight="17.0" prefWidth="80.0" text="Travis Quimby" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font>
+            </Label>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
