@@ -1,0 +1,237 @@
+body {
+	font: 15px/1.5 Helvetica, Verdana, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #FFFFFF;
+}
+
+/********************
+	Global
+********************/
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+#main-col {
+	display: inline-block;
+}
+
+#side-col {
+	width: 30%;
+	background-color: #221e1f;
+	color: #ffffff;
+	display: inline-block;
+	float: right;
+	margin-right: 30%;
+	margin-top: 2%;
+	padding: 10px 10px 10px 10px;
+}
+
+#side-col p {
+	display: inline-block;
+}
+
+/********************
+	Header
+********************/
+header {
+	background: #221e1f;
+	color: #FFFFFF;
+	padding-top: 30px;
+	min-height: 70px;
+	text-align: center;
+}
+
+header a {
+	color: #FFFFFF;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+header li {
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+header .current a {
+	color: #8d6dc4;
+	font-weight: bold;
+}
+
+header a:hover {
+	color: #f4f4f4;
+}
+
+header #cart a {
+	/* Move cart all the way to right? */
+}
+
+#branding a img {
+	width: 100px;
+	padding-bottom: 20px;
+}
+
+/********************
+	Showcase
+********************/
+#showcase {
+	min-height: 400px;
+	background:url(../img/showcase.png) no-repeat 0 -400px;
+	text-align: center;
+	color: #ffffff;
+}
+
+#showcase h1 {
+	margin-top: 100px;
+	font-size: 55px;
+	margin-bottom: 10px;
+}
+
+#showcase p {
+	font-size: 20px;
+}
+
+/********************
+	Custom Order
+********************/
+#custom-order {
+	min-height: 400px;
+	text-align: center;
+	border-bottom-style: solid;
+	border-bottom-width: 20px;
+	border-bottom-color: #221e1f;
+}
+
+/********************
+	Boxes
+********************/
+#boxes {
+	margin-top: 20px;
+}
+
+#boxes .box {
+	float: left;
+	width: 30%;
+	padding: 10px;
+	text-align: center;
+}
+
+#boxes .box img {
+	width: 90px;
+}
+
+#boxes h1 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#boxes h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+/********************
+	Custom Order Form
+********************/
+.customer-order-form {
+	padding-left: 40%;
+}
+
+/********************
+	Shopping Cart
+********************/
+#checkout-button {
+	color: black;
+	text-align: center;
+	font-size: 20px;
+	text-decoration: none;
+	padding: 10px;
+	border: 3px solid black;
+}
+
+/********************
+	Login
+********************/
+#signinForm input {
+	width: 400px;
+}
+
+input[type=text], input[type=password], input[type=email] {
+	display: inline-block;
+	width: 400px;
+}
+
+#forgotPassword a b {
+	text-decoration: none;
+	color: black;
+}
+
+#signinForm {
+	display: inline-block;
+	width: 400px;
+}
+
+#registrationForm {
+	width: 400px;
+}
+
+#signUp b {
+	text-decoration: none;
+	color: black;
+}
+
+/********************
+	Footer
+********************/
+footer {
+	padding: 20px;
+	margin-top: 20px;
+	color: #ffffff;
+	background-color: #221e1f;
+	text-align: center;
+}
+
+/********************
+	Media Queries
+********************/
+@media(max-width: 768px) {
+	header #branding,
+	header nav,
+	header nav li,
+	#boxes .box {
+		float: none;
+		text-align: center;
+		width: 100%
+	}
+
+	header {
+		padding-bottom: 20px;
+	}
+
+	#showcase h1 {
+		margin-top: 40px;
+	}
+
+	input[type=text], input[type=password], input[type=email] {
+		width: 80%;
+	}
+
+	#main-col {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#side-col {
+		margin-left: auto;
+		margin-right: auto;
+	}

@@ -1,0 +1,25 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "logs:CreateLogGroup",
+            "Resource": "arn:aws:logs:us-east-1:802749809537:*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogStream",
+                "logs:PutLogEvents",
+                "dynamodb:GetItem",
+                "dynamodb:Scan",
+                "dynamodb:DeleteItem",
+                "dynamodb:PutItem"
+            ],
+            "Resource": [
+                "arn:aws:logs:us-east-1:802749809537:log-group:/aws/lambda/SOM:*",
+                "arn:aws:dynamodb:us-east-1:802749809537:table/Sales_Order"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+  "buyer_account": {
+    "S": "HJ243242"
+  },
+  "buyer_address": {
+    "S": "5433 Nothere Street"
+  },
+  "buyer_email": {
+    "S": "wrongemail@yahoo.com"
+  },
+  "buyer_name": {
+    "S": "James O'Connell"
+  },
+  "approved": {
+    "S": "yes"
+  },
+  "buyer_phonenumber": {
+    "S": "666-666-6666"
+  },
+  "arrival_date": {
+    "S": "Oct 11, 2016, 12:00 AM"
+  },
+  "item_cost": {
+    "N": "9999.95"
+  },
+  "item_description": {
+    "S": "Sharp Cutting Tool"
+  },
+  "item_name": {
+    "S": "Vinyl Cutter 1X"
+  },
+  "item_number_total": {
+    "N": "1000"
+  },
+  "item_code": {
+    "S": "X1009"
+  },
+  "item_unit_price": {
+    "N": "200"
+  },
+  "order_id": {
+    "N": "1991"
+  },
+  "order_placed_on": {
+    "S": "Sept 6, 2015 10:59 PM"
+  },
+  "Payment_option": {
+    "S": "Credit Card"
+  },
+  "shipment": {
+    "S": "UPS"
+  },
+  "supplier_address": {
+    "S": "2132 Potland Road"
+  },
+  "supplier_code": {
+    "N": "1234"
+  },
+  "supplier_email": {
+    "S": "2sharp4u@psu.edu"
+  },
+  "supplier_name": {
+    "S": "We Sell Sharp Stuff"
+  },
+  "supplier_phone": {
+    "S": "123-342-7567"
+  }
+}

@@ -1,0 +1,171 @@
+﻿
+@{
+    ViewData["Title"] = "DisplayTrackTimeDetails";
+}
+@model TrackTimeList;
+
+<h2>TrackTime Details</h2>
+@if (Model.IsCurrentRecord)
+{
+    <div >
+        @if(TempData.Peek("SaveTrackTime") != null)
+     {
+        foreach (var message in (string[])TempData["SaveTrackTime"])
+        {
+            <p style="color: green">@message</p>
+        }
+    }
+    </div>
+    <div>
+        @if (TempData.Peek("SaveTrackTimeError") != null)
+        {
+            foreach (var message in (string[])TempData["SaveTrackTimeError"])
+            {
+                <p style="color:red">@message</p>
+            }
+        }
+    </div>
+
+    @* Display the track time details per project *@
+    <div class="form-group">
+        <form asp-controller="TrackTime" asp-action="SaveTrackTime">
+            @foreach (var project in Model.UserTrackTimeList)
+            {
+                int index = Model.UserTrackTimeList.IndexOf(project);
+                <div>
+                    <p><b>@project.ProjectName</b>: @project.StartDate-@project.EndDate</p>
+                    <input type="hidden" asp-for="UserTrackTimeList[index].ProjectName" />
+                    <input type="hidden" asp-for="UserTrackTimeList[index].StartDate" />
+                    <input type="hidden" asp-for="UserTrackTimeList[index].EndDate" />
+
+                </div>
+                <div>
+                    <table class="table-striped">
+                        <tbody>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>Monday</td>
+                                <td>Tuesday</td>
+                                <td>Wednesday</td>
+                                <td>Thursday</td>
+                                <td>Friday</td>
+                                <td>Saturday</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="number" asp-for="UserTrackTimeList[index].HourSun" value="@project.HourSun" />
+                                </td>
+                                <td>
+                                    <input type="number" asp-for="UserTrackTimeList[index].HourMon" value="@project.HourMon" />
+                                </td>
+                                <td>
+                                    <input type="number" asp-for="UserTrackTimeList[index].HourTues" value="@project.HourTues" />
+                                </td>
+                                <td>
+                                    <input type="number" asp-for="UserTrackTimeList[index].HourWed" value="@project.HourWed" />
+                                </td>
+                                <td>
+                                    <input type="number" asp-for="UserTrackTimeList[index].HourThurs" value="@project.HourThurs" />
+                                </td>
+                                <td>
+                                    <input type="number" asp-for="UserTrackTimeList[index].HourFri" value="@project.HourFri" />
+                                </td>
+                                <td>
+                                    <input type="number" asp-for="UserTrackTimeList[index].HourSat" value="@project.HourSat" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    Comments:
+                    @Html.TextAreaFor(m => m.UserTrackTimeList[index].Comments, new { @class = "form-control", @row = 3 })
+
+
+                </div>
+                <div>
+                    <hr />
+                </div>
+            }
+            <div>
+                <input type="submit" class="btn-success" value="Save" />
+
+            </div>
+        </form>
+    </div>
+
+
+
+}
+else
+{
+
+    <div>
+        @if (TempData.Peek("ReadonlyTrackTime") != null)
+        {
+            <p style="color: green">@TempData["ReadonlyTrackTime"]</p>
+        }
+    </div>
+
+    @* Display the track time details per project *@
+    <div class="form-group">
+      
+            @foreach (var project in Model.UserTrackTimeList)
+            {
+                int index = Model.UserTrackTimeList.IndexOf(project);
+                <div>
+                    <p><b>@project.ProjectName</b>: @project.StartDate-@project.EndDate</p>
+                    <input type="hidden" asp-for="UserTrackTimeList[index].ProjectName" />
+                    <input type="hidden" asp-for="UserTrackTimeList[index].StartDate" />
+                    <input type="hidden" asp-for="UserTrackTimeList[index].EndDate" />
+
+                </div>
+                <div>
+                    <table class="table-striped">
+                        <tbody>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>Monday</td>
+                                <td>Tuesday</td>
+                                <td>Wednesday</td>
+                                <td>Thursday</td>
+                                <td>Friday</td>
+                                <td>Saturday</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="number" readonly asp-for="UserTrackTimeList[index].HourSun" value="@project.HourSun" />
+                                </td>
+                                <td>
+                                    <input type="number" readonly asp-for="UserTrackTimeList[index].HourMon" value="@project.HourMon" />
+                                </td>
+                                <td>
+                                    <input type="number" readonly asp-for="UserTrackTimeList[index].HourTues" value="@project.HourTues" />
+                                </td>
+                                <td>
+                                    <input type="number" readonly asp-for="UserTrackTimeList[index].HourWed" value="@project.HourWed" />
+                                </td>
+                                <td>
+                                    <input type="number" readonly asp-for="UserTrackTimeList[index].HourThurs" value="@project.HourThurs" />
+                                </td>
+                                <td>
+                                    <input type="number" readonly asp-for="UserTrackTimeList[index].HourFri" value="@project.HourFri" />
+                                </td>
+                                <td>
+                                    <input type="number" readonly asp-for="UserTrackTimeList[index].HourSat" value="@project.HourSat" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    Comments:
+                    <p>@project.Comments</p>
+
+                </div>
+                <div>
+                    <hr />
+                </div>
+            }
+
+    </div>
+
+}
+
+

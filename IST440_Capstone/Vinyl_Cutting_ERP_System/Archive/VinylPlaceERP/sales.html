@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Vinyl Place ERP System</title>
+      <!-- Bootstrap CSS CDN -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+      <!-- Our Custom CSS -->
+      <link rel="stylesheet" href="./css/style.css">
+      <!-- Font Awesome JS -->
+      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   </head>
+   <body>
+      <div class="wrapper">
+         <!-- Sidebar  -->
+         <nav id="sidebar">
+            <div class="sidebar-header justify-content-center">
+               <a class="navbar-brand" href="index.html"><img class="center" src="img/logo.png" height="50" width="50"></a>
+               <h3>Vinyl Place</h3>
+               <strong>VP</strong>
+            </div>
+            <ul class="list-unstyled components">
+               <li class="active">
+                  <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                  <i class="fas fa-home"></i>
+                  Home
+                  </a>
+                  <ul class="collapse list-unstyled" id="homeSubmenu">
+                     <li>
+                        <a href="customer.html">Customers</a>
+                     </li>
+                     <li>
+                        <a href="sales.html">Sales Order</a>
+                     </li>
+                     <li>
+                        <a href="purchasemenu.html">Purchase Order</a>
+                     </li>
+                     <li>
+                        <a href="#">Inventory</a>
+                     </li>
+                     <li>
+                        <a href="#">Invoices</a>
+                     </li>
+                     <li>
+                        <a href="#">Packages</a>
+                     </li>
+                     <li>
+                        <a href="#">Bill</a>
+                     </li>
+                     <li>
+                        <a href="#">Reports</a>
+                     </li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">
+                  <i class="fas fa-briefcase"></i>
+                  About
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                  <i class="fas fa-question"></i>
+                  FAQ
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                  <i class="fas fa-paper-plane"></i>
+                  Contact
+                  </a>
+               </li>
+            </ul>
+         </nav>
+         <!-- Page Content  -->
+         <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #293f50;">
+               <div class="container-fluid">
+                  <button type="button" id="sidebarCollapse" class="btn btn-info">
+                  <i class="fas fa-align-left"></i>
+                  <span>Menu</span>
+                  </button>
+                  <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fas fa-align-justify"></i>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="nav navbar-nav ml-auto">
+                        <a class="navbar-brand mx-auto" href="#">
+                           <div id="logo"></div>
+                        </a>
+<!--
+                        <li class="nav-item active">
+                           <a class="nav-link" href="myaccount.html">My Account</a>
+                        </li>
+-->
+                        <li class="nav-item">
+                           <a class="nav-link" href="login.html">Sign Out</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+            <!-- Page Content  -->
+            <div class="text-center">
+               <h2>Sales Order</h2>
+               <ul class="nav nav-tabs nav-justified " role="tablist">
+                  <li class="nav-item ">
+                     <a class="nav-link active " href="#view" role="tab" data-toggle="tab" aria-controls="view" aria-expanded="true" style="background-color:#8ddae8">View</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#update" role="tab" data-toggle="tab" aria-controls="update">Update</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#delete" role="tab" data-toggle="tab" aria-controls="delete">Delete</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#search" role="tab" data-toggle="tab" aria-controls="search">Search</a>
+                  </li>
+               </ul>
+               <!-- Tab panes -->
+               <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane fade in active" id="view" aria-controls="create-tab">
+                     <div class="container">
+                        <div class="row">
+                           <div class="table-responsive">
+                              <table class="table table-striped w-auto">
+                                 <thead>
+                                    <tr>
+                                       <th>#</th>
+                                       <th>Order Number</th>
+                                       <th>First Name</th>
+                                       <th>Last Name</th>
+                                       <th>Shipping Address</th>
+                                       <th>Date</th>
+                                       <th>Price</th>
+                                       <th>Status</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody id="salesTable"></tbody>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="update" aria-controls="update-tab">
+                     <main class="page">
+                        <section class="shopping-cart dark">
+                           <div class="container">
+                              <div class="card">
+                                 <div class="card-header">
+                                    <div class="customer-info ">
+                                       <h4 class="title text-center">Update an Order  </h4>
+                                       <div class="row">
+                                          <div class="form-group col-sm-6">
+                                             <h5 class="title">Enter Customer Information</h5>
+                                          </div>
+                                          <div class="row">
+                                             <div class="form-group col-sm-6"> <input id="order-number" type="text" class="form-control" placeholder="Order Number" aria-label="Customer Id" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="first-name" type="text" class="form-control" placeholder="First Name" aria-label="First Name" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="last-name" type="text" class="form-control" placeholder="Last Name" aria-label="Last Name" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="shipping-address" type="text" class="form-control" placeholder="Shipping Address" aria-label="Shipping Address" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="date" type="text" class="form-control" placeholder="Date" aria-label="Date" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="price" type="text" class="form-control" placeholder="Price" aria-label="Price" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="status" type="text" class="form-control" placeholder="Status" aria-label="Status" aria-describedby="basic-addon1"> </div>
+                                          </div>
+                                       </div>
+                                       <div class=" text-center"> <button type="button" class="btn btn-primary text-center"><a href="">Update</a></button> </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </section>
+                     </main>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="delete" aria-controls="delete-tab">
+                     <main class="page">
+                        <section class="shopping-cart dark">
+                           <div class="container">
+                              <div class="card">
+                                 <div class="card-header">
+                                    <div class="customer-info ">
+                                       <h4 class="title text-center">Delete an Order</h4>
+                                       <div class="row">
+                                          <div class="form-group col-sm-6">
+                                             <h5 class="title">Enter Order Information </h5>
+                                          </div>
+                                          <div class="row">
+                                             <div class="form-group col-sm-9"> <input id="order-number" type="text" class="form-control" placeholder="Order Number" aria-label="Customer Id" aria-describedby="basic-addon1"> </div>
+                                          </div>
+                                       </div>
+                                       <div class=" text-center"> <button type="button" class="btn btn-primary text-center"><a href="">Delete</a></button> </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </section>
+                     </main>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="search" aria-controls="search-tab">
+                     <main class="page">
+                        <section class="shopping-cart dark">
+                           <div class="container">
+                              <div class="card">
+                                 <div class="card-header">
+                                    <div class="customer-info ">
+                                       <h4 class="title text-center">Search an Order</h4>
+                                       <div class="row">
+                                          <div class="form-group col-sm-6">
+                                             <h5 class="title">Enter Order Information </h5>
+                                          </div>
+                                          <div class="row">
+                                             <div class="form-group col-sm-6"> <input id="search-order-number" type="text" class="form-control" placeholder="Enter Order Number" aria-label="Customer Id" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="search-first-name" type="text" class="form-control" placeholder="First Name" aria-label="First Name" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="search-last-name" type="text" class="form-control" placeholder="Last Name" aria-label="Last Name" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="search-shipping-address" type="text" class="form-control" placeholder="Shipping Address" aria-label="Shipping Address" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="search-date" type="text" class="form-control" placeholder="Date" aria-label="Date" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="search-price" type="text" class="form-control" placeholder="Price" aria-label="Price" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="search-status" type="text" class="form-control" placeholder="Status" aria-label="Status" aria-describedby="basic-addon1"> </div>
+                                          </div>
+                                       </div>
+                                       <div class=" text-center"> <button type="button" class="btn btn-primary text-center" onclick="search();">Search</button> </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </section>
+                        <div class="container">
+                           <div class="row">
+                              <div class="table-responsive">
+                                 <table class="table table-striped w-auto">
+                                    <thead>
+                                       <tr>
+                                          <th>#</th>
+                                          <th>Order Number</th>
+                                          <th>First Name</th>
+                                          <th>Last Name</th>
+                                          <th>Shipping Address</th>
+                                          <th>Date</th>
+                                          <th>Price</th>
+                                          <th>Status</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody id="searchSalesTable"></tbody>
+                                 </table>
+                              </div>
+                           </div>
+                        </div>
+                     </main>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="authTokenModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="authToken">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Your Auth Token</h4>
+                </div>
+                <div class="modal-body">
+                    <textarea class="authToken"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- Popper.JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+      <!-- Bootstrap JS -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+      <script type="text/javascript">
+         $(document).ready(function() {
+             $('#sidebarCollapse').on('click', function() {
+                 $('#sidebar').toggleClass('active');
+             });
+         });
+      </script>
+      <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+    <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+    <script src="js/config.js"></script>
+      <script src="js/cognito-auth.js"></script>
+      <script src="js/ride.js"></script>
+      <script src="js/get-salesorders.js"></script>
+   </body>
+</html>
+

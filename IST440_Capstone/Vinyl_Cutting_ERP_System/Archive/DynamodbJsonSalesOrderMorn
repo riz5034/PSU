@@ -1,0 +1,77 @@
+{
+  "amount": {
+    "N": "8.99"
+  },
+  "billing_address": {
+    "S": "245 Camac st"
+  },
+  "card_number": {
+    "N": "9990"
+  },
+  "card_type": {
+    "S": "Visa"
+  },
+  "cardholder_name": {
+    "S": "James White"
+  },
+  "city": {
+    "S": "philadelphia"
+  },
+  "company_name": {
+    "S": "Vinyl Cutting"
+  },
+  "customer_name": {
+    "S": "James White"
+  },
+  "delivery_method": {
+    "S": "UPS"
+  },
+  "expected_shipping_date": {
+    "S": "September 21, 2019"
+  },
+  "expiration_date": {
+    "S": "March 2020"
+  },
+  "order_date": {
+    "S": "September 14, 2019"
+  },
+  "order_id": {
+    "S": "Sales Order"
+  },
+  "order_number": {
+    "N": "122380"
+  },
+  "price": {
+    "N": "8.99"
+  },
+  "product_name": {
+    "S": "Owl"
+  },
+  "quantity": {
+    "N": "1"
+  },
+  "raw_sku": {
+    "N": "12356789"
+  },
+  "shipping_cost": {
+    "N": "3.99"
+  },
+  "state": {
+    "S": "PA"
+  },
+  "sub_total": {
+    "N": "8.99"
+  },
+  "tax": {
+    "N": "1.2"
+  },
+  "total": {
+    "N": "14.5"
+  },
+  "tracking_number": {
+    "S": "1Z23567896812456"
+  },
+  "zip_code": {
+    "N": "19141"
+  }
+}

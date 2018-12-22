@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Puchase_order</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#view").click(function () {
+				// GET method
+				var jsonDoc = {
+					"TableName": "SmallTest",
+				};
+				$.ajax({
+					url: "https://jxg5hfdsw8.execute-api.us-east-1.amazonaws.com/test1/endToEnd",
+					type: "GET",
+					data: jsonDoc,
+					dataType: "json",
+					sucess: function (jsonDoc) {
+						console.log(jsonDoc);
+					}
+				});
+				// $('.alert').hide().show('medium');
+				alert("View in Inspect Elements!")
+			});
+			$("#submit").click(function () {
+				// POST method
+				var jsonDoc = {
+					"TableName": "SmallTest",
+					"Item": {
+						"id": document.getElementById("id").value,
+						"fullName": document.getElementById("fullName").value
+					}
+				};
+				$.ajax({
+					url: "https://jxg5hfdsw8.execute-api.us-east-1.amazonaws.com/test1/endToEnd",
+					type: "POST",
+					data: JSON.stringify(jsonDoc),
+					dataType: "json",
+					sucess: function (jsonDoc) {
+						console.info(jsonDoc);
+					}
+				});
+				// $('.alert').hide().show('medium');
+				alert("Successfully Submited!")
+			});
+			$("#update").click(function () {
+				// Update method
+				var jsonDoc = {
+					"TableName": "SmallTest",
+					"Key": {
+						"id": document.getElementById("id").value
+					},
+					"UpdateExpression": "set fullName = :a",
+					"ExpressionAttributeValues": {
+						":a": document.getElementById("fullName").value
+					},
+					"ReturnValues": "UPDATED_NEW"
+				};
+				$.ajax({
+					url: "https://jxg5hfdsw8.execute-api.us-east-1.amazonaws.com/test1/endToEnd",
+					type: "PUT",
+					data: JSON.stringify(jsonDoc),
+					dataType: "json",
+					sucess: function (jsonDoc) {
+						console.info(jsonDoc);
+					}
+				});
+				// $('.alert').hide().show('medium');
+				alert("Updated PO Info!")
+			});
+			$("#delete").click(function () {
+				// delete method
+				var jsonDoc = {
+					"TableName": "SmallTest",
+					"Key": {
+						"id": document.getElementById("id").value
+					}
+				};
+				$.ajax({
+					url: "https://jxg5hfdsw8.execute-api.us-east-1.amazonaws.com/test1/endToEnd",
+					type: "DELETE",
+					data: JSON.stringify(jsonDoc),
+					dataType: "json",
+					sucess: function (jsonDoc) {
+						console.info(jsonDoc);
+					}
+				});
+				// $('.alert').hide().show('medium');
+				alert("Deleting record!")
+			});
+		});
+	</script>
+	<link rel="stylesheet" href="./po.css">
+
+</head>
+
+<body>
+	
+<!-- Horizontal nav bar at top of page -->
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+	<li><a href="#">Home</a></li>
+	<li><a href="#">Inventory</a></li>
+	<li><a href="#">Customers</a></li>
+	<li><a href="#">Sales Order</a></li>
+	<li><a href="#">Packages</a></li>
+	<li><a href="#">Invoices</a></li>
+	<li><a href="#">Purchase Order</a></li>
+	<li><a href="#">Bill</a></li>
+	<li><a href="#">Reports</a></li>
+	<li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+	
+	<div id="colorstrip" />
+
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#" class="w3=bar=item w3-button">About</a>
+		<a href="#" class="w3=bar=item w3-button">Vinyl Cutting</a>
+		<a href="#" class="w3=bar=item w3-button">Upload</a>
+		<a href="#" class="w3=bar=item w3-button">Contact</a>
+	</div>
+
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+	<div class="hero-image">
+		<div class="hero-text">
+			<a href="index.html">
+  <img src="https://s3.us-east-2.amazonaws.com/tester-james/images/logo.png" alt="logo" style="width:280px;height:80px;border:0;">
+</a>
+
+			<h2>Purchase Order</h2>
+		</div>
+	</div>
+
+	<br />
+	<br />
+	<br />
+
+	<p>
+		<div class="container" id="main">
+
+			<!-- <h2>Purchase Order</h2> -->
+			<form id="form" action="" method="POST" enctype='application/json'>
+				id:
+				<input id="id" type="text" name="id" class="form-control" /> fullName:
+				<input id="fullName" type="text" name="fullName" class="form-control" />
+
+
+				<br />
+
+				<input id="submit" type="button" name="submit" class="btn btn-primary" value="Submit PO">
+				<!-- <div class="alert alert-info alert-dismissable">
+				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				Successfully Submited!
+			</div> -->
+
+				<button id="view" type="button" class="btn btn-warning">View PO</button>
+				<!-- <div class="alert alert-warning alert-dismissable">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			View in Inspect Elements!
+		</div> -->
+
+				<button id="update" type="button" class="btn btn-success">Update PO</button>
+				<!-- <div class="alert alert-success alert-dismissable">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			Updated PO Info!
+		</div> -->
+
+				<button id="delete" type="button" class="btn btn-danger">Delete PO</button>
+				<!-- <div class="alert alert-danger alert-dismissable">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			Deleting record!
+		</div> -->
+			</form>
+
+		</div>
+	</p>
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+			document.getElementById("main").style.marginLeft = "250px";
+			document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+		}
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+			document.getElementById("main").style.marginLeft = "0";
+			document.body.style.backgroundColor = "white";
+		}
+	</script>
+
+	<div id="authTokenModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="authToken">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="myModalLabel">Your Auth Token</h4>
+				</div>
+				<div class="modal-body">
+					<textarea class="authToken"></textarea>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+<footer>
+<p><a href="terms.html" style="color:white">Terms Of Use</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="help.html" style="color:white">Help</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="policy.html" style="color:white">Privacy Policy</a></p>
+</footer>
+</html>

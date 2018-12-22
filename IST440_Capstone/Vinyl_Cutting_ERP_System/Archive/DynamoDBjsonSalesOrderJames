@@ -1,0 +1,62 @@
+{
+  "customer_account": {
+    "S": "HJ243242"
+  },
+  "bill_to_address": {
+    "S": "5433 Nothere Street"
+  },
+  "bill_to_city": {
+    "S": "Pittsburg"
+  },
+ "approved": {
+    "S": "yes"
+  },
+  "bill_to_email": {
+    "S": "wrongemailagain@yahoo.com"
+  },
+  "ship_to_city": {
+    "S": "Kentucky"
+  },
+  "bill_to_name": {
+    "S": "Orion O'Connell"
+  },
+  "payment_method": {
+    "S": "Credit Card"
+  },
+  "bill_to_phone": {
+    "S": "987-654-4321"
+  },
+  "bill_to_state": {
+    "S": "PA"
+  },
+  "bill_to_zipcode": {
+    "N": "19115"
+  },
+  "name": {
+    "S": "James O'Connell"
+  },
+  "ship_to_name": {
+    "S": "James O'Connell"
+  },
+  "order_id": {
+    "N": "1991"
+  },
+  "price": {
+    "N": "9999.95"
+  },
+  "ship_to_address": {
+    "S": "5433 Nothere Street"
+  },
+  "ship_to_email": {
+    "S": "insertemailhere@yahoo.com"
+  },
+  "ship_to_phone": {
+    "S": "666-666-6666"
+  },
+  "ship_to_state": {
+    "S": "PA"
+  },
+  "ship_to_zipcode": {
+    "N": "19115"
+  }
+}

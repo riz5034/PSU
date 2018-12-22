@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Vinyl Place ERP System</title>
+      <!-- Bootstrap CSS CDN -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+      <!-- Our Custom CSS -->
+      <link rel="stylesheet" href="./css/style.css">
+      <!-- Font Awesome JS -->
+      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <div class="wrapper">
+         <!-- Sidebar  -->
+         <nav id="sidebar">
+            <div class="sidebar-header justify-content-center">
+               <a class="navbar-brand" href="index.html"><img class="center" src="img/logo.png" height="50" width="50"></a>
+               <h3>Vinyl Place</h3>
+               <strong>VP</strong>
+            </div>
+            <ul class="list-unstyled components">
+               <li class="active">
+                  <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                  <i class="fas fa-home"></i>
+                  Home
+                  </a>
+                  <ul class="collapse list-unstyled" id="homeSubmenu">
+                     <li>
+                        <a href="customer.html">Customers</a>
+                     </li>
+                     <li>
+                        <a href="sales.html">Sales Order</a>
+                     </li>
+                     <li>
+                        <a href="viewpurchase.html">Purchase Order</a>
+                     </li>
+                     <li>
+                        <a href="inventory.html">Inventory</a>
+                     </li>
+                     <li>
+                        <a href="invoice.html">Invoices</a>
+                     </li>
+                     <li>
+                        <a href="#">Packages</a>
+                     </li>
+                     <li>
+                        <a href="#">Bill</a>
+                     </li>
+                     <li>
+                        <a href="#">Reports</a>
+                     </li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">
+                  <i class="fas fa-briefcase"></i>
+                  About
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                  <i class="fas fa-question"></i>
+                  FAQ
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                  <i class="fas fa-paper-plane"></i>
+                  Contact
+                  </a>
+               </li>
+            </ul>
+         </nav>
+         <!-- Page Content  -->
+         <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #293f50;">
+               <div class="container-fluid">
+                  <button type="button" id="sidebarCollapse" class="btn btn-info">
+                  <i class="fas fa-align-left"></i>
+                  <span>Menu</span>
+                  </button>
+                  <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fas fa-align-justify"></i>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="nav navbar-nav ml-auto">
+                        <a class="navbar-brand mx-auto" href="#">
+                           <div id="logo"></div>
+                        </a>
+<!--
+                        <li class="nav-item active">
+                           <a class="nav-link" href="myaccount.html">My Account</a>
+                        </li>
+-->
+                        <li class="nav-item">
+                           <a class="nav-link" href="#" id="signOut">Sign Out</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+            <div class="container-fluid padding">
+               <div class="row text-center padding">
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                     <a href="customer.html">
+                     <img src="img/customers.png">
+                     </a>
+                     <h3>Customers</h3>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                     <a href="sales.html">
+                     <img src="img/order.png">
+                     </a>
+                     <h3>Sales Order</h3>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                     <a href="viewpurchase.html">
+                     <img src="img/purchase.png">
+                     </a>
+                     <h3>Purchase Order</h3>
+                  </div>
+               </div>
+               <hr class="my-4">
+            </div>
+            <div class="container-fluid padding">
+               <div class="row text-center padding">
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                     <a href="inventory.html">
+                     <img src="img/inventory.png">
+                     </a>
+                     <h3>Inventory</h3>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                     <a href="invoice.html">
+                     <img src="img/invoice.png">
+                     </a>
+                     <h3>Invoices</h3>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                     <a href="https://www.qad.com/">
+                     <img src="img/package.png">
+                     </a>
+                     <h3>Packages</h3>
+                  </div>
+               </div>
+               <hr class="my-4">
+            </div>
+            <div class="container-fluid padding">
+               <div class="row text-center padding">
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                     <a href="https://www.qad.com/">
+                     <img src="img/bill.png">
+                     </a>
+                     <h3>Bill</h3>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                     <a href="https://www.qad.com/">
+                     <img src="img/report.png">
+                     </a>
+                     <h3>Reports</h3>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="authTokenModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="authToken">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Your Auth Token</h4>
+                </div>
+                <div class="modal-body">
+                    <textarea class="authToken"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- jQuery CDN - Slim version (=without AJAX) -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <!-- Popper.JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+      <!-- Bootstrap JS -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+      <script type="text/javascript">
+         $(document).ready(function() {
+             $('#sidebarCollapse').on('click', function() {
+                 $('#sidebar').toggleClass('active');
+             });
+         });
+      </script>
+
+         <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+    <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+    <script src="js/config.js"></script>
+      <script src="js/cognito-auth.js"></script>
+      <script src="js/ride.js"></script>
+   </body>
+</html>
+

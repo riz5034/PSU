@@ -1,0 +1,95 @@
+﻿@{
+    Layout = null;
+}
+@model WorkHourTracker.Web.Models.UserLoginInput;
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Work Hour Tracker - Login</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body class="LoginFormBody">
+    <div class="container center-block">
+        <div class="container text-center">
+            <div>
+                @if (TempData.Peek("LoginErrors") != null)
+                {
+                    foreach (var errorMessage in (string[])@TempData["LoginErrors"])
+                    {
+                        <p style="color: red">@errorMessage</p>
+                    }
+                }
+            </div>
+
+            <div>
+                @if (TempData.Peek("CreateUserAccountSuccess") != null)
+                {
+                    <p style="color: green">@TempData["CreateUserAccountSuccess"].ToString()</p>
+                }
+            </div>
+
+            <div>
+                @if (TempData.Peek("UserNotLoggedIn") != null)
+                {
+                    <p style="color: red">@TempData["UserNotLoggedIn"].ToString()</p>
+                }
+            </div>
+            <div>
+                @if (TempData.Peek("ProcessLoginError") != null)
+                {
+                    foreach (var message in (string[])TempData["ProcessLoginError"])
+                    {
+                      <p style="color:red">@message</p>
+                    }
+                }
+            </div>
+        </div>
+        <div class="LoginForm" style="border: 2px solid #222">
+            @*<h1>Work Hour Tracker</h1>
+                <h3>Login</h3>
+                <p>Please enter your user name and password to access the application.</p>*@
+            <span style="font-size:large"><b>Work Hour Tracker</b></span>
+            <br />
+            <form asp-action="ProcessLogin" asp-controller="Home">
+                <br />
+                <div>
+                    @*<label asp-for="UserName"></label>*@
+
+                    <div>
+                        <i class="fas fa-user"></i>
+                        <input asp-for="UserName" style="color:black" type="text" placeholder="UserName" />
+                    </div>
+                </div>
+                <br />
+                <div>
+                    @*<label asp-for="Password"></label>*@
+                    <div>
+                        <i class="fas fa-key"></i>
+                        <input style="color:black" asp-for="Password" type="password" placeholder="Password" />
+                    </div>
+                </div>
+                <br />
+                <div>
+                    <input class="btn-lg btn-success btn-block" value="Log in" type="submit" />
+                </div>
+            </form>
+            <br />
+            Not registered? <a style="color:blue" asp-area="" asp-action="DisplayCreateUserAccountPage" asp-controller="Home">Create An Account</a>
+        </div>
+
+    </div>
+</body>
+</html>

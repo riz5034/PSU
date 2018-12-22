@@ -1,0 +1,7 @@
+				FinalRoom				
+		UpperClassArea	RichSnobRoom	UpperClassArea				
+			UpperClassGate				Farm	
+			Tunnel				RatRoom	
+	ResidentialArea	BlackoutTunnel	TownHall	BlackoutTunnel	Tunnel	Tunnel	Tunnel	TunnelExit
+	JacksHut		BlackoutTunnel		Tunnel			
+			MarketPlace		Spring			

@@ -1,0 +1,63 @@
+.home-grid-container {
+  content: "";
+  display: table;
+  clear: none;
+  margin: auto;
+  display: grid;
+  background-color: #59062d;
+  padding: 20px;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  vertical-align: middle;
+  text-align: center;
+  color: white; 
+  position: center;
+}
+
+.grid-item {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  background: #bb81e8;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.grid-footer{
+	display: grid;
+	padding: 10px;
+	text-align: center;
+}
+
+.footer-length{
+	height: 10px;
+	width: auto;
+	position: relative;
+}
+
+table{
+	border: 5 px solid black;
+	border-collapse: collapse;
+	width: 100%;
+	padding: 10px;
+	background-color: #59062d;
+}
+
+mark{
+	background-color: yellow;
+}
+
+tr{
+	width: 100px;
+}
+
+td{
+	height: 100px;
+}
+
+.dashboard{
+	background-color: pink; 
+}
+

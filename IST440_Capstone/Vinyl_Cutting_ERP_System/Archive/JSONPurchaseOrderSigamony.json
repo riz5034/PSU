@@ -1,0 +1,167 @@
+[
+    {
+    "Supplier_Name": "Kim",
+    "JSONPurchaseOrder_id": "1001",
+    "branch_code": "JETMY",
+    "supplier_id": "INV",
+    "supplier_code": 1001,
+    "reference_no": "8950",
+    "remarks": "Appeal",
+    "po_date": "Aug 6, 2018 9:58:28 PM",
+    "order_type": "PENDING",
+    "itemList": [
+        {
+            "item_Name": "Red bag",
+            "item_code": "X1000",
+            "Measurement" :"pairs",
+            "item_type": "INV",
+            "qty": 10,
+            "unit_price": 20
+        },
+        {
+            "item_Name": "Shoe",
+            "item_code": "X1048",
+            "Measurement" :"pairs",
+            "item_type": "INV",
+            "qty": 10,
+            "unit_price": 20
+        }
+    ],
+    "Order_total_Price": "400"
+},
+{
+    "Supplier_Name": "Coach",
+    "JSONPurchaseOrder_id": "1010",
+    "branch_code": "LOY",
+    "supplier_id": "INV",
+    "supplier_code": 1014,
+    "reference_no": "8951",
+    "remarks": "Appeal",
+    "po_date": "Aug 8, 2018 9:58:28 PM",
+    "order_type": "SHIPPING",
+    "itemList": [
+        {
+            "item_Name": "Gold bag",
+            "item_code": "C1000",
+            "Measurement" :"pairs",
+            "item_type": "INV",
+            "qty": 10,
+            "unit_price": 150
+        },
+        {
+            "item_Name": "White and Black bag",
+            "item_code": "C1048",
+            "item_type": "INV",
+            "qty": 10,
+            "unit_price": 110
+        },
+        {
+            "item_Name": "Red bag",
+            "item_code": "C1005",
+            "Measurement" :"pairs",
+            "item_type": "INV",
+            "qty": 10,
+            "unit_price": 89
+        }
+    ],
+    "Order_total_Price": "3490"
+},
+{
+    "Supplier_Name": "PUMA",
+    "JSONPurchaseOrder_id": "1015",
+    "branch_code": "PHI",
+    "supplier_id": "INV",
+    "supplier_code": 1018,
+    "reference_no": "8751",
+    "remarks": "Shoe",
+    "po_date": "Aug 15, 2018 9:58:28 PM",
+    "order_type": "PENDING",
+    "itemList": [
+        {
+            "item_Name": "Gold Shoe",
+            "item_code": "C1000",
+            "Measurement" :"pairs",
+            "item_type": "INV",
+            "qty": 10,
+            "unit_price": 150
+        },
+        {
+            "item_Name": "White and Black Shoe",
+            "item_code": "C1048",
+            "Measurement" :"pairs",
+            "item_type": "INV",
+            "qty": 10,
+            "unit_price": 110
+        },
+        {
+            "item_Name": "Sport Shoe",
+            "item_code": "C1005",
+            "Measurement" :"pairs",
+            "item_type": "INV",
+            "qty": 10,
+            "unit_price": 89
+        },
+        {
+            "item_Name": "Casual Shoe",
+            "item_code": "C1010",
+            "Measurement" :"pairs",
+            "item_type": "INV",
+            "qty": 10,
+            "unit_price": 69
+        }
+    ],
+    "Order_total_Price": "4180"
+},
+{
+    "Supplier_Name": "Coach",
+    "JSONPurchaseOrder_id": "1020",
+    "branch_code": "LOY",
+    "supplier_id": "INV",
+    "supplier_code": 1014,
+    "reference_no": "8968",
+    "remarks": "Appeal",
+    "po_date": "Aug 15, 2018 9:58:28 PM",
+    "order_type": "PENDING",
+    "itemList": [
+        {
+            "item_Name": "Gold bag",
+            "item_code": "C1000",
+            "Measurement" :"pairs",
+            "item_type": "INV",
+            "qty": 10,
+            "unit_price": 150
+        },
+        {
+            "item_Name": "Diamond bag",
+            "item_code": "C1048",
+            "Measurement" :"pairs",
+            "item_type": "INV",
+            "qty": 10,
+            "unit_price": 570
+        }
+    ],
+    "Order_total_Price": "7200"
+},
+{
+    "Supplier_Name": "PUMA",
+    "JSONPurchaseOrder_id": "1025",
+    "branch_code": "PHI",
+    "supplier_id": "INV",
+    "supplier_code": 1018,
+    "reference_no": "8851",
+    "remarks": "Shoe",
+    "po_date": "Aug 20, 2018 9:58:28 PM",
+    "order_type": "SHIPPING",
+    "itemList": [
+        {
+            "item_Name": "Diamond Shoe",
+            "item_code": "C1030",
+            "Measurement" :"pairs",
+            "item_type": "INV",
+            "qty": 5,
+            "unit_price": 780
+        }
+    ],
+    "Order_total_Price": "3900"
+}
+]

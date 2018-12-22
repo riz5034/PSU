@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+
+    <title>Vinyl Place ERP System</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="topnav-Left">
+            <a href="index.html" class="active"><img src="img/logo.png" alt="logo" style="width:47px;height: 51px;padding-bottom: 4px;"></a> <h1 style="display: inline;">Vinyl Place</h1>
+          </div>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="#" id="signOut">Sign Out</a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="sidebar">
+                <ul class="nav nav-sidebar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="customer.html">Customers</a></li>
+                    <li><a href="sales.html">Sales Order</a></li>
+                    <li class="active"><a href="viewpurchase.html">Purchase Order <span class="sr-only">(current)</span></a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a href="workorder.html">Work Order</a></li>
+                    <li><a href="invoice.html">Invoices</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="help.html">Help</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="col-sm-12 main">
+                <div class="row">
+                    <h1 class="page-header">Purchase Order</h1>
+ <div class="table-wrapper-scroll-y">
+
+             <table class="table table-bordered table-striped">
+                 <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Purchase Order Number</th>
+                                                    <th>Arrival Date</th>
+                                                    <th>Date Issued</th>
+                                                    <th>Material ID</th>
+                                                    <th>Order Placement Date</th>
+                                                    <th>Payment Method</th>
+                                                    <th>Purchase Order Total</th>
+                                                    <th>Supplier ID</th>
+                                                    <th>Warehouse ID</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="purchaseTable"></tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+
+
+                    <ul class="nav nav-tabs nav-justified " role="tablist">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link " href="#create" role="tab" data-toggle="tab" aria-controls="create">Create</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#update" role="tab" data-toggle="tab" aria-controls="update">Update</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#delete" role="tab" data-toggle="tab" aria-controls="delete">Delete</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#search" role="tab" data-toggle="tab" aria-controls="search">Search</a>
+                        </li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        
+                        <!--
+               ------------------------------- Create --------------------------------------------
+               -->
+               <div role="tabpanel" class="tab-pane fade " id="create" aria-controls="create-tab">
+                <main class="page">
+                    <section class="shopping-cart dark">
+                        <div class="container">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="customer-info ">
+                                        <h4 class="title text-center">Create an Order</h4>
+                                        <div class="row">
+                                            <div class="row">
+                                                <label for="create-material">Enter Material (separated by comma)</label>
+                                                <div class="form-group col-sm-12"> <input id="create-material" type="text" class="form-control" placeholder="Materials" aria-label="Item" aria-describedby="basic-addon1"> </div>
+                                                <br>
+                                                <div class="form-group col-sm-6"> <input id="create-supplier" type="text" class="form-control" placeholder="Supplier ID" aria-label="Supplier ID" aria-describedby="basic-addon1"> </div>
+                                                <div class="form-group col-sm-6"> <input id="create-warehouse" type="text" class="form-control" placeholder="Warehouse" aria-label="Warehouse" aria-describedby="basic-addon1"> </div>
+
+                                            </div>
+
+                                            <div class="card-details">
+                                                <h3 class="title">Credit Card Details</h3>
+                                                <div class="row">
+                                                  <div class="form-group col-sm-5">
+                                                    <label for="create-card-holder">Card Holder</label>
+                                                    <input id="create-card-holder" type="text" class="form-control" placeholder="Card Holder" aria-label="Card Holder" aria-describedby="basic-addon1">
+                                                </div>
+                                                <div class="form-group col-sm-5">
+                                                    <label for="">Expiration Date</label>
+                                                    <div class="input-group expiration-date">
+                                                      <input type="text" class="form-control" placeholder="MM" aria-label="MM" pattern="\d{2}" aria-describedby="basic-addon1">
+                                                      <span class="date-separator">/</span>
+                                                      <input type="text" class="form-control" placeholder="YYYY" aria-label="YYYY" pattern="\d{4}" aria-describedby="basic-addon1">
+                                                  </div>
+                                              </div>
+                                              <div class="form-group col-sm-5">
+                                                <label for="create-card-number">Card Number</label>
+                                                <input id="create-create-card-number" type="number" class="form-control" placeholder="Card Number" pattern="\d{19}" aria-label="Card Holder" aria-describedby="basic-addon1">
+                                            </div>
+                                            <div class="form-group col-sm-5">
+                                                <label for="create-cvc">CVC</label>
+                                                <input id="create-cvc" type="number" class="form-control" placeholder="CVC" pattern="\d{3}" aria-label="Card Holder" aria-describedby="basic-addon1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" text-center"> <button onclick="createPurchaseOrder();" type="button" class="btn btn-info text-center">Checkout</button> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            </main>
+        </div>
+        <!--
+               ------------------------------- Update --------------------------------------------
+               -->
+        <div role="tabpanel" class="tab-pane fade" id="update" aria-controls="update-tab">
+            <main class="page">
+                        <section class="shopping-cart dark">
+                           <div class="container">
+                              <div class="card">
+                                 <div class="card-header">
+                                    <div class="customer-info ">
+                                       <h4 class="title text-center">Update an Order</h4>
+
+                                       <div class="row">
+                                       <div class="row">
+                                         <div class="form-group col-sm-6"> 
+                                          <input id="update-purchase-num" type="text" class="form-control" placeholder="Purchase Order Number" aria-label="Purchase Order Number" aria-describedby="basic-addon1"></div>
+                                          <button onclick="setUpdateValues();" type="button" class="btn btn-info text-center">Search</button>
+                                       </div>
+                                       <br>
+                                       <div class="row">
+                                        <div class="form-group col-sm-5">
+                                          <label for="update-arrival-date">Arrival Date</label>
+                                          <input id="update-arrival-date" type="text" class="form-control" placeholder="Arrival Date" aria-label="Arrival Date" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="form-group col-sm-5">
+                                          <label for="update-date-issued">Date Issued</label>
+                                          <div>
+                                            <input id="update-date-issued" type="text" class="form-control" placeholder="Date Issued" aria-label="Issued" aria-describedby="basic-addon1">
+                                          </div>
+                                        </div>
+                                        <div class="form-group col-sm-5">
+                                          <label for="update-order-placement-date">Order Placement Date</label>
+                                          <input id="update-order-placement-date" type="text" class="form-control" placeholder="Order Placement Date" aria-label="Order Placement Date" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="form-group col-sm-10">
+                                          <label for="update-material">Material</label>
+                                          <input id="update-material" type="text" class="form-control" placeholder="Material" aria-label="Material" aria-describedby="basic-addon1">
+                                        </div>
+
+                                        
+                                        <div class="form-group col-sm-5">
+                                          <label for="update-payment">Payment Method</label>
+                                          <input id="update-payment" type="text" class="form-control" placeholder="Payment Method" aria-label="Payment Method" aria-describedby="basic-addon1">
+
+                                        </div>
+                                        <div class="form-group col-sm-5">
+                                          <label for="update-purchase-order-total">Purchase Order Total</label>
+                                          <input id="update-purchase-order-total" type="number" class="form-control" placeholder="Purchase Order Total" pattern="\d{5}"  aria-label="Purchase Order Total" aria-describedby="basic-addon1">
+
+                                        </div>
+                                        <div class="form-group col-sm-5">
+                                          <label for="update-supplier">Supplier ID</label>
+                                          <input id="update-supplier" type="text" class="form-control" placeholder="Supplier ID" aria-label="Supplier ID" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="form-group col-sm-5">
+                                          <label for="update-warehouse">Warehouse ID</label>
+                                          <input id="update-warehouse" type="tel" class="form-control" placeholder="Warehouse ID" aria-label="Warehouse ID" aria-describedby="basic-addon1">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class=" text-center"> <button onclick="updatePurchaseOrder();" type="button" class="btn btn-info text-center">Update</button></div>
+                                  </div>
+                           </div>
+                        </section>
+                     </main>
+        </div>
+        <!--
+               ------------------------------- Delete --------------------------------------------
+               -->
+        <div role="tabpanel" class="tab-pane fade" id="delete" aria-controls="delete-tab">
+            <main class="page">
+                <section class="shopping-cart dark">
+                    <div class="container">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="customer-info ">
+                                    <h4 class="title text-center">Delete an Order</h4>
+                                   <div class="row">
+
+                                                        
+                                                    </div>
+                                                    
+                                                    <div class="row">
+                                                      
+                                                            <div class="form-group col-sm-11"> <input id="delete-order-num" type="text" class="form-control" placeholder="Purchase Order Number" aria-label="Purchase Order Number" aria-describedby="basic-addon1"> </div>
+                                                            
+                                                        </div>
+                                                    
+                                                </div>
+                                                                    <div class=" text-center"> <button onclick="deletePurchaseOrder()" type="button" class="btn btn-info text-center">Delete</button> </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                     
+            </section>
+            </main>
+        </div>
+        <!--
+               ------------------------------- Search --------------------------------------------
+               -->
+        <div role="tabpanel" class="tab-pane fade" id="search" aria-controls="search-tab">
+            <main class="page">
+                <section class="shopping-cart dark">
+                    <div class="container">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="customer-info ">
+                                    <h4 class="title text-center">Search an Order </h4>
+                                   <div class="row">
+
+                                                   
+                                                    <div class="row">
+                                                        <div class="form-group col-sm-8">
+                                                            <h5 class="title">Enter vendor information</h5>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="form-group col-sm-6"> <input id="search-purchase-order-number" type="text" class="form-control" placeholder="Purchase Order Number" aria-label="Purchase Order Number" aria-describedby="basic-addon1"> </div>
+                                                            <div class="form-group col-sm-6"> <input id="search-arrival-date" type="text" class="form-control" placeholder="Arrival Date" aria-label="Arrival Date" aria-describedby="basic-addon1"> </div>
+                                                            <div class="form-group col-sm-6"> <input id="search-date-issued" type="text" class="form-control" placeholder="Date Issued" aria-label="Date Issued" aria-describedby="basic-addon1"> </div>
+                                                            <div class="form-group col-sm-6"> <input id="search-order-placement-date" type="text" class="form-control" placeholder="Order Placement Date" aria-label="Order Placement Date" aria-describedby="basic-addon1"> </div>
+                                                            <div class="form-group col-sm-6"> <input id="search-material" type="text" class="form-control" placeholder="Material" aria-label="Material" aria-describedby="basic-addon1"> </div>
+                                                            <div class="form-group col-sm-6"> <input id="search-payment-method" type="text" class="form-control" placeholder="Payment Method" aria-label="Payment Method" aria-describedby="basic-addon1"> </div>
+                                                            <div class="form-group col-sm-6"> <input id="search-purchase-order-total" type="text" class="form-control" placeholder="Purchase Order Total " aria-label="Purchase Order Total" aria-describedby="basic-addon1"> </div>
+                                                            <div class="form-group col-sm-6"> <input id="search-supplier" type="text" class="form-control" placeholder="Supplier ID" aria-label="Supplier ID" aria-describedby="basic-addon1"> </div>
+                                                            <div class="form-group col-sm-6"> <input id="search-warehouse" type="text" class="form-control" placeholder="Warehouse ID" aria-label="Warehouse ID" aria-describedby="basic-addon1"> </div>
+                                                        </div>
+                                                    </div>
+                                                                           <div class=" text-center"> <button type="button" class="btn btn-info text-center" onclick="search();">Search</button> </div>
+
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br><br>
+                                          <div class="container">
+                           <div class="row">
+                              <div class="table-responsive">
+                                 <table class="table table-striped w-auto">
+                                    <thead>
+                                       <tr>
+                                          <th>#</th>
+                                          <th>Order Number</th>
+                                          <th>Arrival Date</th>
+                                          <th>Date Issued</th>
+                                          <th>Order Placement Date</th>
+                                          <th>Material</th>
+                                          <th>Payment Method</th>
+                                          <th>Order Total</th>
+                                          <th>Supplier</th>
+                                          <th>Warehouse</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody id="searchPurchaseTable"></tbody>
+                                 </table>
+                              </div>
+                           </div>
+                        </div>   
+            </section>
+            
+            </main>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+    <!--  -->
+    <div id="authTokenModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="authToken">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Your Auth Token</h4>
+                </div>
+                <div class="modal-body">
+                    <textarea class="authToken"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+
+    </script>
+    <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+    <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/cognito-auth.js"></script>
+    <script src="js/ride.js"></script>
+    <script src="js/get-purchaseorders.js"></script>
+</body>
+
+</html>

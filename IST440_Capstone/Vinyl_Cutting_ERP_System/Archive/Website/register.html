@@ -1,0 +1,101 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Vinyl Cutting | Register</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/layout.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<div id="noCognitoMessage" class="configMessage" style="display: none;">
+            <div class="backdrop"></div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">No Cognito User Pool Configured</h3>
+                </div>
+                <div class="panel-body">
+                    <p>There is no user pool configured in <a href="/js/config.js">/js/config.js</a>.</p>
+                </div>
+            </div>
+        </div>
+
+		<div class="grid-wrapper">
+		<header>
+			<div class="container">
+				<div id="branding">
+					<a href="index.html">
+						<img src="img/badge.png">
+					</a>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="shop.html">Shop</a></li>
+						<li><a href="about.html">About</a></li>
+						<li ><a href="support.html">Support</a></li>
+						<li class="current" id="cart" ><a href="cart.html">Cart</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section id="main">
+			<div class="container">
+				<article id="main-col">
+					<h1 class="page-title">Register</h1>
+					<form id="registrationForm">
+					<!-- Include first name, last name, address, email, and phone number attributes -->
+					  <h4>First Name</h4>
+					  <input type="firstname" id="firstNameInputRegister" placeholder="First Name" pattern=".*" required>
+					  <br><br>
+					  <h4>Last Name</h4>
+					  <input type="lastname" id="lastNameInputRegister" placeholder="Last Name" pattern=".*" required>
+					  <br><br>
+					  <!-- Address represents physical mailing address as a JSON structure -->
+					  <h4>Address</h4>
+					  <input id="streetAddressInputRegister" placeholder="Street Address" pattern=".*" required>
+					  <input id="localityInputRegister" placeholder="City" pattern=".*" required>
+					  <input id="regionInputRegister" placeholder="State" pattern=".*" required>
+					  <input id="postalCodeInputRegister" placeholder="Postal Code" pattern=".*" required>
+					  <input id="countryInputRegister" placeholder="Country" pattern=".*" required>
+					  <br><br>
+					  <h4>Telephone</h4>
+					  <input id="phoneNumberInputRegister" placeholder="Phone Number" pattern=".*" required>
+					  <br><br>
+					  <h4>Email Address</h4>
+		              <input type="email" id="emailInputRegister" placeholder="Email" pattern=".*" required>
+		              <br><br>
+		              <h4>Password</h4>
+		              <input type="password" id="passwordInputRegister" placeholder="Password" pattern=".*" required>
+		              <input type="password" id="password2InputRegister" placeholder="Confirm Password" pattern=".*" required>
+		              <br><br>
+		              <input type="submit" value="Sign up">
+		            </form>
+				</article>
+				<aside id="side-col">
+					<h3>NEED HELP</h3>
+					<p>If you have any questions or need help with your account, you may contact us to assist you.</p>
+					<br>
+					<b>CALL US AT</b><p>&nbsp;&nbsp;999-999-9999</p>
+					<br>
+					<b>Monday - Friday</b><p>&nbsp;&nbsp;9am - 9pm EST</p>
+				</aside>
+			</div>
+		</section>
+
+		<footer>
+			<p>Vinyl Cutting Copyright &copy; 2018</p>
+		</footer>
+		</div>
+
+		<script src="js/vendor/aws-cognito-sdk.min.js"></script>
+        <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/cognito-auth.js"></script>
+	</body>
+</html>

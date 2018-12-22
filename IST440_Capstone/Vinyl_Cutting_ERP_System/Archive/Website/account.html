@@ -1,0 +1,58 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Vinyl Cutting | Welcome</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/layout.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<div class="grid-wrapper">
+		<header>
+			<div class="container">
+				<div id="branding">
+					<a href="index.html">
+						<img src="img/badge.png">
+					</a>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="shop.html">Shop</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="support.html">Support</a></li>
+						<li id="cart" ><a href="cart.html">Cart</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section id="main">
+			<p id="account-info"></p>
+			<div>
+				<br>
+				<h4>Change Password</h4>
+				<input type="password" id="oldPassword" placeholder="Old Password" required>
+				<br>
+				<input type="password" id="newPassword" placeholder="New Password" required>
+			</div>
+			<input id="changePass" type="button" value="Change Password" onclick="cPassword();">
+			<input id="deleteUser" type="button" value="Delete Account" onclick="deleteUser();">
+		</section>
+
+		<footer>
+			<p>Vinyl Cutting Copyright &copy; 2018</p>
+		</footer>
+		</div>
+
+		<script src="js/vendor/aws-cognito-sdk.min.js"></script>
+        <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+        <script src="js/config.js"></script>
+		<script src="js/getcurrentuser.js"></script>
+	</body>
+</html>

@@ -1,0 +1,17 @@
+#banner {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+
+footer{
+	position: relative;
+    left: 0;
+	right: 0;
+    bottom: 0;
+	padding: 1rem;
+    width: 100%;
+    background-color: #3d52ad;
+    color: #e6ffff;
+    text-align: center;
+}

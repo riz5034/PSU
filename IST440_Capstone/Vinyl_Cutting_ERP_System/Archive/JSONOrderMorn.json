@@ -1,0 +1,72 @@
+{
+	"JSONOrderMorn": [{
+			"company name": "Vinyl Cutting",
+			"order number": "0122380",
+			"raw sku": "12356789",
+			"order date": {
+				"day": "14",
+				"month": "September",
+				"year": "2019"
+			}
+		},
+		{
+			"tracking number": "1Z23567896812456",
+			"delivery method": "UPS",
+			"expected shipping date": {
+				"day": "21",
+				"month": "September",
+				"year": "2019"
+			}
+		},
+		{
+			"order info": {
+				"customer name": {
+					"first name": "James",
+					"last name": "White"
+				}
+			}
+		},
+		{
+			"address": {
+				"billing address": "245 Camac st",
+				"city": "philadelphia",
+				"state": "PA",
+				"zip code": "19141"
+			}
+		},
+		{
+			"payment method": {
+				"card type": "Visa",
+				"card #": "9990"
+			}
+		},
+		{
+			"cardholder name": {
+				"first name": "James",
+				"last name": "White"
+			}
+		},
+		{
+			"expiration date": {
+				"month": "March",
+				"year": "2020"
+			}
+		},
+		{
+			"product description": {
+				"product name": "Owl",
+				"price": "8.99",
+				"quantity": "1",
+				"amount": "8.99"
+			}
+		},
+		{
+			"order summary": {
+				"sub total": "8.99",
+				"shipping cost": "3.99",
+				"tax": "1.20",
+				"total": "14.50"
+			}
+		}
+	]
+}

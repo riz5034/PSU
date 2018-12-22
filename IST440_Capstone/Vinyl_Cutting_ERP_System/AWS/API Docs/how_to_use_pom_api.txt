@@ -1,0 +1,67 @@
+POM
+
+Invoke URL - https://80w8970v24.execute-api.us-east-1.amazonaws.com/default/POM?
+
+//GET item(s) by attribute
+    just query strings
+
+    TableName=Sales_Order&id=6-3-1&
+    attribute=Arrival_Date&Type=getByAttribute
+
+//GET whole table
+    TableName=Purchase_Order
+	
+//GET single item by key, must use if getting by key
+    TableName=Purchase_Order&id=2&Type=getItem
+
+
+
+//UPDATE MULTIPLE VALUES
+    query string----   TableName=Purchase_Order
+
+"body":
+{
+    "TableName": "Purchase_Order",
+    "Key": {
+      "Purchase_Order_Number": 1
+    },
+    "UpdateExpression": "set Arrival_Date = :a, Date_Issued = :b",
+    "ExpressionAttributeValues": {
+      ":a": "6-6-6",
+      ":b": "6-6-6"
+    },
+    "ReturnValues": "UPDATED_NEW"
+}
+
+
+
+//POST
+    query string----   TableName=Purchase_Order
+
+"body":
+{
+    "TableName": "Purchase_Order",
+    "Item": {
+      "Arrival_Date": "6-3-1",
+      "Date_Issued": "1-1-1",
+      "Material_ID": "1",
+      "Order_Placement_Date": "1-1-1",
+      "Payment_Method": "1",
+      "Purchase_Order_Number": 4,
+      "Purchase_Order_Total": "$1",
+      "Supplier_ID": "4",
+      "Warehouse_ID": "2"
+    }
+}
+  
+//Delete
+    query string----   TableName=Purchase_Order
+
+"body": 
+{
+    "TableName": "Purchase_Order",
+    "Key": {
+      "Purchase_Order_Number": 4
+    }
+    
+}

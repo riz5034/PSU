@@ -1,0 +1,80 @@
+{
+  "buyer_account": {
+    "S": "JS114"
+  },
+  "buyer_address": {
+    "S": "123 Gargle Street"
+  },
+  "buyer_email": {
+    "S": "insertemailhere@yahoo.com"
+  },
+  "buyer_name": {
+    "S": "Jon Seitz"
+  },
+  "buyer_phone": {
+    "S": "267-555-5555"
+  },
+  "country_code": {
+    "S": "+1"
+  },
+  "EDA": {
+    "S": "Sept 20, 2018, 10:00 AM"
+  },
+  "ETA": {
+    "S": "Sept 21, 2018, 1:00 PM"
+  },
+  "item_code": {
+    "N": "77"
+  },
+  "item_cost": {
+    "N": "13.95"
+  },
+  "item_description": {
+    "S": "Vinyl cutting tool description"
+  },
+  "item_name": {
+    "S": "Vinyl Cutter 1X"
+  },
+  "item_quantity": {
+    "N": "10"
+  },
+  "item_serial_number": {
+    "S": "X1000"
+  },
+  "item_type": {
+    "S": "CUTTER"
+  },
+  "item_unit_price": {
+    "N": "20"
+  },
+  "measurement": {
+    "S": "Pair"
+  },
+  "order_id": {
+    "N": "1001"
+  },
+  "order_placement_date": {
+    "S": "Sept 13, 2018 1:39 PM"
+  },
+  "payment_type": {
+    "S": "Credit Card"
+  },
+  "shipment": {
+    "S": "UPS"
+  },
+  "supplier_address": {
+    "S": "1600 Woodland Road"
+  },
+  "supplier_code": {
+    "N": "1234"
+  },
+  "supplier_email": {
+    "S": "vinylcutting1@psu.edu"
+  },
+  "supplier_name": {
+    "S": "We Sell Vinyl Cutting Tools"
+  },
+  "supplier_phone": {
+    "S": "267-123-4567"
+  }
+}

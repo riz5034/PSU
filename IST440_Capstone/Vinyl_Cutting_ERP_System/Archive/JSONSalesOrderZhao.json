@@ -1,0 +1,31 @@
+{
+	"OrderID": "1",
+	"OrderDate": "2014-01-01T23:28:56.782Z",
+	"CustomerName": "John Doe",
+	"ShippingInformation": {
+		"Name": "John Doe",
+		"Address": "123 Fake St.",
+		"City": "Fakeville",
+		"StateProvice": "PA",
+		"PostCode": 53412,
+		"CountryCode": "US",
+		"PhoneNumber": "(123)456-7890",
+		"Email": "jdoe@email.com"
+	},
+	"PaymentMethod": {
+		"Type": "Visa",
+		"LastFourDigitsOfCardNum": 1234
+	},
+	"Product": {
+		"Name": "Custom Vinyl",
+		"Quantity": 1,
+		"UnitPrice": "$7.99",
+		"UnitofMeasurement": "Set"
+	},
+	"OrderSummary": {
+		"Subtotal": "$7.99",
+		"Shipping": "$0.00",
+		"Tax": "$0.00",
+		"Total": "$7.99"
+	}
+}

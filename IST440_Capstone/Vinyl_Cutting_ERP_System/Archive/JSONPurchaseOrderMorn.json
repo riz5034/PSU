@@ -1,0 +1,36 @@
+{
+	"JSONPurchaseOrderMorn": [{
+			"vendor number": "20013",
+			"vendor name": "MySupplier",
+			"contact info": {
+				"first name": "John",
+				"last name": "Jackson",
+				"contact number": " 267-3453-9023",
+				"order number": "012358",
+				"order date": {
+					"day": "23",
+					"month": "September",
+					"year": "2019"
+				}
+			}
+		},
+		{
+			"add new order": {
+				"part number": "AB024",
+				"part description": "Vinyl paper",
+				"quantity": "15",
+				"unit price": "2.99",
+				"due date": {
+					"day": "23",
+					"month": "September",
+					"year": "2019"
+				}
+			}
+		},
+		{
+			"order status": "APPROVED",
+			"approval status": ""
+
+		}
+	]
+}

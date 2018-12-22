@@ -1,0 +1,42 @@
+{
+	"OrderID": "1",
+	"Order Date": "2014-02-03T23:28:56.782Z",
+	"Supplier": {
+		"Name": "Materials R Us",
+		"Address": "543 Faker St",
+		"City": "Fakeville",
+		"StateProvice": "PA",
+		"PostCode": 53412,
+		"CountryCode": "US",
+		"Phone": "(542)544-6773",
+		"Email": "rea@mat.com"
+	},
+	"DeliverTo": {
+		"Name": "Materials R Us",
+		"Address": "543 Faker St",
+		"City": "Fakeville",
+		"StateProvice": "PA",
+		"PostCode": 53412,
+		"CountryCode": "US"
+	},
+	"Products": [{
+		"ItemCode": "V9431",
+		"Description": "Vinyl Paper",
+		"Quantity": 3,
+		"UnitofMeasurement": "Dozen",
+		"UnitPrice": "$10.00",
+		"Amount": "$30.00"
+	}, {
+		"ItemCode": "V543",
+		"Description": "Vinyl Paper II",
+		"Quantity": 5,
+		"UnitofMeasurement": "Dozen",
+		"UnitPrice": "$12.00",
+		"Amount": "$60.00"
+	}],
+	"OrderSummary": {
+		"TotalBeforeTax": "$90.00",
+		"Tax": "$0.00",
+		"Total": "$90.00"
+	}
+}

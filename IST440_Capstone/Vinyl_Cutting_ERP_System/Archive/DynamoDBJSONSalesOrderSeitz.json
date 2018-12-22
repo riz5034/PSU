@@ -1,0 +1,62 @@
+{
+  "account": {
+    "S": "JS114"
+  },
+  "bill_to_address": {
+    "S": "123 Gargle Street"
+  },
+  "bill_to_city": {
+    "S": "Philly"
+  },
+  "bill_to_email": {
+    "S": "rustyemailhere@yahoo.com"
+  },
+  "bill_to_name": {
+    "S": "Rusty Seitz"
+  },
+  "bill_to_payment": {
+    "S": "Credit Card"
+  },
+  "bill_to_phone": {
+    "S": "267-777-7777"
+  },
+  "bill_to_state": {
+    "S": "PA"
+  },
+  "bill_to_zipcode": {
+    "N": "19115"
+  },
+  "country_code": {
+    "S": "+1"
+  },
+  "name": {
+    "S": "Jon Seitz"
+  },
+  "order_id": {
+    "N": "1001"
+  },
+  "price": {
+    "N": "13.95"
+  },
+  "ship_to_address": {
+    "S": "123 Gargle Street"
+  },
+  "ship_to_city": {
+    "S": "Philly"
+  },
+  "ship_to_email": {
+    "S": "insertemailhere@yahoo.com"
+  },
+  "ship_to_name": {
+    "S": "Jon Seitz"
+  },
+  "ship_to_phone": {
+    "S": "267-555-5555"
+  },
+  "ship_to_state": {
+    "S": "PA"
+  },
+  "ship_to_zipcode": {
+    "N": "19115"
+  }
+}

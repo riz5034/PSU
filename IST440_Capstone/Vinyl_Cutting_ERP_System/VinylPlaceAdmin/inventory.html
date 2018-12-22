@@ -1,0 +1,284 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+
+    <title>Vinyl Place ERP System</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    
+   
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="topnav-Left">
+            <a href="index.html" class="active"><img src="img/logo.png" alt="logo" style="width:47px;height: 51px;padding-bottom: 4px;"></a> <h1 style="display: inline;">Vinyl Place</h1>
+          </div>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            <li><a href="#" id="signOut">Sign Out</a></li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="sidebar">
+          <ul class="nav nav-sidebar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="customer.html">Customers</a></li>
+            <li><a href="sales.html">Sales Order</a></li>
+            <li><a href="viewpurchase.html">Purchase Order</a></li>
+              <li class="active"><a href="inventory.html">Inventory <span class="sr-only">(current)</span></a></li>
+              <li><a href="workorder.html">Work Order</a></li>
+            <li><a href="invoice.html">Invoices</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="help.html">Help</a></li>
+
+          </ul>
+        
+        </div>
+        
+        <div class="col-sm-12 main">
+          <div class="row">
+            <h1 class="page-header">Inventory</h1>
+              <div class="table-responsive">
+<div class="table-wrapper-scroll-y">
+
+             <table class="table table-bordered table-striped">                                 <thead>
+                                    <tr>
+                                       <th>#</th>
+                                       <th>Material ID</th>
+                                       <th>Material Description</th>
+                                       <th>Material Level</th>
+                                       <th>Material Component</th>
+                                       <th>Material Count</th>
+                                       <th>Product Serial</th>
+                                       <th>Warehouse ID</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody id="inventoryTable"></tbody>
+                              </table>
+                           </div>
+              </div>
+
+             <ul class="nav nav-tabs nav-justified " role="tablist" >
+                  
+                  <li class="nav-item">
+                     <a class="nav-link " href="#create" role="tab" data-toggle="tab" aria-controls="create">Create</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#update" role="tab" data-toggle="tab" aria-controls="update">Update</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#delete" role="tab" data-toggle="tab" aria-controls="delete">Delete</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#search" role="tab" data-toggle="tab" aria-controls="search">Search</a>
+                  </li>
+               </ul>
+               <!-- Tab panes -->
+               <div class="tab-content">
+                  
+                  <div role="tabpanel" class="tab-pane fade " id="create" aria-controls="create-tab">
+                     <main class="page">
+                        <section class="shopping-cart dark">
+                           <div class="container">
+                              <div class="card">
+                                 <div class="card-header">
+                                    <div class="customer-info ">
+                                       <h4 class="title text-center">Create an Inventory item</h4>
+                                       <div class="row">
+                                          
+                                          <div class="row">
+                                             <div class="form-group col-sm-6"> <input id="create-material-id" type="text" class="form-control" placeholder="Material ID" aria-label="Material ID" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="create-material-desc" type="text" class="form-control" placeholder="Material Description" aria-label="Material Description" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="create-material-level" type="text" class="form-control" placeholder="Material Level" aria-label="Material Level" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="create-material-component" type="text" class="form-control" placeholder="Material Component" aria-label="Material Component" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="create-material-count" type="text" class="form-control" placeholder="Material Count" aria-label="Material Count" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="create-product-serial" type="text" class="form-control" placeholder="Product Serial" aria-label="Product Serial" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="create-warehouse-id" type="text" class="form-control" placeholder="Warehouse ID" aria-label="Warehouse ID" aria-describedby="basic-addon1"> </div>
+                                          </div>
+                                       </div>
+                                       <div class=" text-center"> <button onclick="createMaterial();" type="button" class="btn btn-info text-center">Create</button> </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </section>
+                     </main>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="update" aria-controls="update-tab">
+                     <main class="page">
+                        <section class="shopping-cart dark">
+                           <div class="container">
+                              <div class="card">
+                                 <div class="card-header">
+                                    <div class="customer-info ">
+                                       <h4 class="title text-center">Update an Inventory item </h4>
+                                       <div class="row">
+                                          <div class="row">
+                                         <div class="form-group col-sm-6"> 
+                                          <input id="update-material-id" type="text" class="form-control" placeholder="Material ID" aria-label="Material ID" aria-describedby="basic-addon1"></div>
+                                          <button onclick="setUpdateValues();" type="button" class="btn btn-info text-center">Search</button>
+                                       </div>
+                                       <br>
+                                          <div class="row">
+                                             <div class="form-group col-sm-6"> <input id="update-material-desc" type="text" class="form-control" placeholder="Material Description" aria-label="Material Description" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="update-material-level" type="text" class="form-control" placeholder="Material Level" aria-label="Material Level" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="update-material-component" type="text" class="form-control" placeholder="Material Component" aria-label="Material Component" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="update-material-count" type="text" class="form-control" placeholder="Material Count" aria-label="Material Count" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="update-product-serial" type="text" class="form-control" placeholder="Product Serial" aria-label="Product Serial" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="update-warehouse-id" type="text" class="form-control" placeholder="Warehouse ID" aria-label="Warehouse ID" aria-describedby="basic-addon1"> </div>
+                                          </div>
+                                       </div>
+                                       <div class=" text-center"> <button onclick="updateMaterial();" type="button" class="btn btn-info text-center">Update</button> </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </section>
+                     </main>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="delete" aria-controls="delete-tab">
+                     <main class="page">
+                        <section class="shopping-cart dark">
+                           <div class="container">
+                              <div class="card">
+                                 <div class="card-header">
+                                    <div class="customer-info ">
+                                       <h4 class="title text-center">Delete an Inventory item</h4>
+                                       <div class="row">
+                                         
+                                          <div class="row">
+                                             <div class="form-group col-sm-11"> <input id="delete-material" type="text" class="form-control" placeholder="Material ID" aria-label="Material ID" aria-describedby="basic-addon1"> </div>
+                                          </div>
+                                       </div>
+                                       <div class=" text-center"> <button onclick="deleteMaterial();" type="button" class="btn btn-info text-center">Delete</button> </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </section>
+                     </main>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="search" aria-controls="search-tab">
+                     <main class="page">
+                        <section class="shopping-cart dark">
+                           <div class="container">
+                              <div class="card">
+                                 <div class="card-header">
+                                    <div class="customer-info ">
+                                       <h4 class="title text-center">Search Inventory</h4>
+                                       <div class="row">
+                                          
+                                          <div class="row">
+                                             <div class="form-group col-sm-6"> <input id="search-material-id" type="text" class="form-control" placeholder="Material ID" aria-label="Material ID" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="search-material-desc" type="text" class="form-control" placeholder="Material Description" aria-label="Material Description" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="search-material-level" type="text" class="form-control" placeholder="Material Level" aria-label="Material Level" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="search-material-component" type="text" class="form-control" placeholder="Material Component" aria-label="Material Component" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="search-material-count" type="text" class="form-control" placeholder="Material Count" aria-label="Material Count" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="search-product-serial" type="text" class="form-control" placeholder="Product Serial" aria-label="Product Serial" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="search-warehouse" type="text" class="form-control" placeholder="Warehouse ID" aria-label="Warehouse ID" aria-describedby="basic-addon1"> </div>
+                                          </div>
+                                       </div>
+                                       <div class=" text-center"> <button onclick="search();" type="button" class="btn btn-info text-center">Search</button> </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </section>
+                        <div class="row">
+                          <div class="table-responsive">
+                           <table class="table table-striped w-auto">
+                            <thead>
+                             <tr>
+                              <th>#</th>
+                              <th>Material ID</th>
+                              <th>Material Description</th>
+                              <th>Material Level</th>
+                              <th>Material Component</th>
+                              <th>Material Count</th>
+                              <th>Product Serial</th>
+                              <th>Warehouse ID</th>
+                            </tr>
+                          </thead>
+                          <tbody id="searchMaterialTable"></tbody>
+                        </table>
+                      </div>
+                    </div>
+                     </main>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="authTokenModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="authToken">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Your Auth Token</h4>
+                </div>
+                <div class="modal-body">
+                    <textarea class="authToken"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+          </div>
+        </div>
+     
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+       <script type="text/javascript">
+         $(document).ready(function() {
+             $('#sidebarCollapse').on('click', function() {
+                 $('#sidebar').toggleClass('active');
+             });
+         });
+      </script>
+      <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+    <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+    <script src="js/config.js"></script>
+      <script src="js/cognito-auth.js"></script>
+      <script src="js/ride.js"></script>
+      <script src="js/get-inventory.js"></script>
+  </body>
+</html>

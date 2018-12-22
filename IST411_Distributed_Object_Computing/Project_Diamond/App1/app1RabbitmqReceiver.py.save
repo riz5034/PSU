@@ -1,0 +1,42 @@
+receive_payloadqueue(import pika
+import settings
+import sys
+sys.path.append("../")
+from App5.curlfeed import CurlFeed
+class App1RabbitmqReceiver:
+	'''
+	Contains method to receive payload rabbitMQ
+	'''
+	def receive_payloadqueue(self):
+		'''
+		Receives paylaod from queue 
+		Return true when it receives the payload
+		Return false when payload is not received
+		'''
+		try:
+			print("connection to localhost")
+			connection = pika.BlockingConnection(pika.ConnectionParameters(host=settings.HOSTNAME))
+			channel = connection.channel()
+			print("Queue hello created")
+			channel.queue_declare(queue = 'HelloTeam2')
+			curlFeed = CurlFeed("App1", "Success", "Successfully receiving rabbitmq payload from app4")
+			curlFeed.send()
+
+			def callback(ch, method, properties, body):
+				print("[x] received %r" % body)
+				channel.basic_consume(callback, queue='HelloTeam2', no_ack = True)
+				print(' [*] Waiting for message. To exist press CTRL+C')
+				curlFeed = CurlFeed("App1", "Success", "Successfully receiving rabbitmq payload from app4")
+				curlFeed.send()
+				channel.start_consuming()
+			return True
+		except Exception as e:
+			print(e)
+			curlFeed = CurlFeed("App1", "Failure", "Failed to receive rabbitmq payload from  App4")
+			curlFeed.send()
+			return False
+
+if __name__=='__main__':
+        a = App1RabbitmqReceiver()
+        a.receive_payloadqueue()
+

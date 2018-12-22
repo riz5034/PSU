@@ -1,0 +1,158 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+
+
+/* Add a hover effect for buttons */
+/*button:hover {
+        opacity: 0.8;
+    }*/
+
+/* Extra style for the cancel button (red) */
+/*.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}*/
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.loginContainer {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.LoginForm {
+    padding: 30px;
+    position: absolute;
+    width: 40%; /*was 200px*/
+    height: 40%;
+    left: 40%;
+    top: 30%;
+    text-align: center;
+    background-color: grey;
+    color: white;
+    margin-left: -100px; /* half of the width  */
+    margin-top: -100px; /* half of the height */
+}
+
+.LoginFormBody {
+    background-color: white;
+}
+
+/*DisplayCreateUserAccountPage.cshtml styles*/
+/* Add padding to containers */
+.signUpContainer {
+    padding: 16px;
+}
+
+/* Full-width input fields */
+.signUpInput {
+    width: 35%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+    .signUpInput:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    opacity: 0.9;
+}
+
+    .registerbtn:hover {
+        opacity: 1;
+    }
+
+/* Add a blue text color to links */
+.signUpAnchor {
+    color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}

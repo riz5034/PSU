@@ -1,0 +1,5 @@
+ERROR:root:<class 'urllib.error.URLError'>
+ERROR:root:<class 'urllib.error.URLError'>
+ERROR:root:<class 'urllib.error.URLError'>
+ERROR:root:<class 'urllib.error.URLError'>
+ERROR:root:<class 'IndexError'>

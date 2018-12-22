@@ -1,0 +1,320 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+
+    <title>Vinyl Place ERP System</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    
+   
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                    <div class="topnav-Left">
+            <a href="index.html" class="active"><img src="img/logo.png" alt="logo" style="width:47px;height: 51px;padding-bottom: 4px;"></a> <h1 style="display: inline;">Vinyl Place</h1>
+          </div>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            <li><a href="#" id="signOut">Sign Out</a></li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="sidebar">
+          <ul class="nav nav-sidebar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li class="active"><a href="customer.html">Customers <span class="sr-only">(current)</span></a></li>
+            <li><a href="sales.html">Sales Order</a></li>
+            <li><a href="viewpurchase.html">Purchase Order</a></li>
+              <li><a href="inventory.html">Inventory</a></li>
+              <li><a href="workorder.html">Work Order</a></li>
+            <li><a href="invoice.html">Invoices</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="help.html">Help</a></li>
+
+          </ul>
+        
+        </div>
+        
+        <div class="col-sm-12 main">
+          <div class="row">
+            <h1 class="page-header">Customers</h1>
+              <div class="table-responsive">
+                              <div class="table-wrapper-scroll-y">
+
+             <table class="table table-bordered table-striped">
+                              <thead>
+                                 <tr>
+                                    <th>#</th>
+                                    <th>Customer Id</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Street Address</th>
+                                    <th>City</th>
+                                    <th>State</th>
+                                    <th>Zip Code</th>
+                                    <th>Country</th>
+                                    <th>Email</th>
+                                    <th>Phone Number</th>
+                                    <th>Status</th>
+                                 </tr>
+                              </thead>
+                              <tbody id="customerTable"></tbody>
+                           </table>
+              </div>
+              </div>
+
+           <ul class="nav nav-tabs nav-justified " role="tablist">
+               
+               <li class="nav-item">
+                  <a class="nav-link " href="#create" role="tab" data-toggle="tab" aria-controls="create">Create</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#update" role="tab" data-toggle="tab" aria-controls="update">Update</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#delete" role="tab" data-toggle="tab" aria-controls="delete">Delete</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#search" role="tab" data-toggle="tab" aria-controls="search">Search</a>
+               </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              
+               <!--
+               ------------------------------- Create --------------------------------------------
+               -->
+               <div role="tabpanel" class="tab-pane fade " id="create" aria-controls="create-tab">
+                  <main class="page">
+                     <section class="shopping-cart dark">
+                        <div class="container">
+                           <div class="card">
+                              <div class="card-header">
+                                 <div class="customer-info ">
+                                    <h4 class="title text-center">Create an Account</h4>
+                                    <div class="row">
+                                       
+                                       <div class="row">
+                                          <div class="form-group col-sm-6"> <input id="create-first-name" type="text" class="form-control" placeholder="First Name" aria-label="First Name" aria-describedby="basic-addon1"> </div>
+                                          <div class="form-group col-sm-6"> <input id="create-last-name" type="text" class="form-control" placeholder="Last Name" aria-label="Last Name" aria-describedby="basic-addon1"> </div>
+                                          <div class="form-group col-sm-12"> <input id="create-street-address" type="text" class="form-control" placeholder="Street Address" aria-label="Street Address" aria-describedby="basic-addon1"> </div>
+                                          <div class="form-group col-sm-6"> <input id="create-city" type="text" class="form-control" placeholder="City" aria-label="City" aria-describedby="basic-addon1"> </div>
+                                          <div class="form-group col-sm-6"> <input id="create-state" type="text" class="form-control" placeholder="State " aria-label="State" aria-describedby="basic-addon1"> </div>
+                                          <div class="form-group col-sm-6"> <input id="create-zip-code" type="text" class="form-control" placeholder="Zip Code" aria-label="Zip Code" aria-describedby="basic-addon1"> </div>
+                                          <div class="form-group col-sm-6"> <input id="create-country" type="text" class="form-control" placeholder="Country" aria-label="Country" aria-describedby="basic-addon1"> </div>
+                                          <div class="form-group col-sm-6"> <input id="create-email" type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1"> </div>
+                                          <div class="form-group col-sm-6"> <input id="create-phone-number" type="text" class="form-control" placeholder="Phone Number" aria-label="Phone Number" aria-describedby="basic-addon1"> </div>
+                                       </div>
+                                      <div class="row">
+                                        <div class="form-group col-sm-6"> <input id="create-password" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1"> </div>
+                                        <div class="form-group col-sm-6"> <input id="create-confirm" type="password" class="form-control" placeholder="Confirm Password" aria-label="Confirm Password" aria-describedby="basic-addon1"> </div>
+                                      </div>
+                                    </div>
+                                    <div class=" text-center"> <button onclick="createCustomer();" type="button" class="btn btn-info text-center">Create</button></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                  </main>
+               </div> 
+               <!--
+               ------------------------------- Update --------------------------------------------
+               -->
+               <div role="tabpanel" class="tab-pane fade" id="update" aria-controls="update-tab">
+                  <main class="page">
+                     <section class="shopping-cart dark">
+                        <div class="container">
+                           <div class="card">
+                              <div class="card-header">
+                                 <div class="customer-info ">
+                                    <h4 class="title text-center">Update an Account </h4>
+                                    <div class="row">
+                                       <div class="row">
+                                         <div class="form-group col-sm-6"> <input id="update-customer-id" type="text" class="form-control" placeholder="Customer Id" aria-label="Customer Id" aria-describedby="basic-addon1"></div>
+                                         <button onclick="setUpdateValues();" type="button" class="btn btn-info text-center">Search</button>
+                                       </div>
+                                       <br>
+                                       <div class="row">
+                                          <div class="form-group col-sm-6"> <input id="update-first-name" type="text" class="form-control" placeholder="First Name" aria-label="First Name" aria-describedby="basic-addon1"> </div>
+                                          <div class="form-group col-sm-6"> <input id="update-last-name" type="text" class="form-control" placeholder="Last Name" aria-label="Last Name" aria-describedby="basic-addon1"> </div>
+                                          <div class="form-group col-sm-6"> <input id="update-street-address" type="text" class="form-control" placeholder="Street Address" aria-label="Street Address" aria-describedby="basic-addon1"> </div>
+                                           <div class="form-group col-sm-6"> <input id="update-city" type="text" class="form-control" placeholder="City" aria-label="City" aria-describedby="basic-addon1"> </div>
+                                          <div class="form-group col-sm-6"> <input id="update-state" type="text" class="form-control" placeholder="State " aria-label="State" aria-describedby="basic-addon1"> </div>
+                                          <div class="form-group col-sm-6"> <input id="update-zip-code" type="text" class="form-control" placeholder="Zip Code" aria-label="Zip Code" aria-describedby="basic-addon1"> </div>
+                                          <div class="form-group col-sm-6"> <input id="update-country" type="text" class="form-control" placeholder="Country" aria-label="Country" aria-describedby="basic-addon1"> </div>
+                                          <div class="form-group col-sm-6"> <input id="update-email" type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1"> </div>
+                                          <div class="form-group col-sm-6"> <input id="update-phone-number" type="text" class="form-control" placeholder="Phone Number" aria-label="Phne Number" aria-describedby="basic-addon1"> </div>
+                                       </div>
+                                    </div>
+                                    <div class=" text-center"> <button onclick="updateUser();" type="button" class="btn btn-info text-center">Update</button></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                  </main>
+               </div>
+               <!--
+               ------------------------------- Delete --------------------------------------------
+               -->
+               <div role="tabpanel" class="tab-pane fade" id="delete" aria-controls="delete-tab">
+                  <main class="page">
+                     <section class="shopping-cart dark">
+                        <div class="container">
+                           <div class="card">
+                              <div class="card-header">
+                                 <div class="customer-info ">
+                                    <h4 class="title text-center">Delete an Account</h4>
+                                    <div class="row">
+                                       
+                                       <div class="row">
+                                          <div class="form-group col-sm-11"> <input id="delete-customer-id" type="text" class="form-control" placeholder="Customer Email" aria-label="Customer Email" aria-describedby="basic-addon1"> </div>
+                                       </div>
+                                    </div>
+                                    <div class=" text-center"> <button onclick="deleteCustomer();" type="button" class="btn btn-info text-center">Delete</button> </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                  </main>
+               </div>
+               <!--
+               ------------------------------- Search --------------------------------------------
+               -->
+               <div role="tabpanel" class="tab-pane fade" id="search" aria-controls="search-tab">
+                  <main class="page">
+                     <section class="shopping-cart dark">
+                        <div class="container">
+                           <div class="card">
+                              <div class="card-header">
+                                 <div class="customer-info ">
+                                    <h4 class="title text-center">Search an Account</h4>
+                                    <div class="row">
+                                       
+                                       <div class="row">
+                                          <div class="form-group col-sm-6"> <input id="search-customer-id" type="text" class="form-control" placeholder=" Enter Customer Id" aria-label="Customer Id" aria-describedby="basic-addon1"> </div>
+                                          <div class="form-group col-sm-6"> <input id="search-first-name" type="text" class="form-control" placeholder="First Name" aria-label="First Name" aria-describedby="basic-addon1"> </div>
+                                          <div class="form-group col-sm-6"> <input id="search-last-name" type="text" class="form-control" placeholder="Last Name" aria-label="Last Name" aria-describedby="basic-addon1"> </div>
+                                          <div class="form-group col-sm-6"> <input id="search-street-address" type="text" class="form-control" placeholder="Street Address" aria-label="Street Address" aria-describedby="basic-addon1"> </div>
+                                          <div class="form-group col-sm-6"> <input id="search-city" type="text" class="form-control" placeholder="City" aria-label="City" aria-describedby="basic-addon1"> </div>
+                                          <div class="form-group col-sm-6"> <input id="search-state" type="text" class="form-control" placeholder="State " aria-label="State" aria-describedby="basic-addon1"> </div>
+                                          <div class="form-group col-sm-6"> <input id="search-zip-code" type="text" class="form-control" placeholder="Zip Code" aria-label="Zip Code" aria-describedby="basic-addon1"> </div>
+                                          <div class="form-group col-sm-6"> <input id="search-country" type="text" class="form-control" placeholder="Country" aria-label="Country" aria-describedby="basic-addon1"> </div>
+                                          <div class="form-group col-sm-6"> <input id="search-email" type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1"> </div>
+                                          <div class="form-group col-sm-6"> <input id="search-phone-number" type="text" class="form-control" placeholder="Phone Number" aria-label="Phne Number" aria-describedby="basic-addon1"> </div>
+                                          <div class="form-group col-sm-6"> <input id="search-status" type="text" class="form-control" placeholder="Status" aria-label="Status" aria-describedby="basic-addon1"> </div>
+                                       </div>
+                                    </div>
+                                    <div class=" text-center"> <button type="button" class="btn btn-info text-center" onclick="search();">Search</button> </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                     <br><br>
+                     <div class="container">
+                     <div class="row">
+                        <div class="table-responsive">
+                           <table class="table table-striped w-auto">
+                              <thead>
+                                 <tr>
+                                    <th>#</th>
+                                    <th>Customer Id</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Street Address</th>
+                                    <th>City</th>
+                                    <th>State</th>
+                                    <th>Zip Code</th>
+                                    <th>Country</th>
+                                    <th>Email</th>
+                                    <th>Phone Number</th>
+                                    <th>Status</th>
+                                 </tr>
+                              </thead>
+                              <tbody id="searchCustomerTable"></tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </main>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="authTokenModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="authToken">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Your Auth Token</h4>
+                </div>
+                <div class="modal-body">
+                    <textarea class="authToken"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+          </div>
+        </div>
+     
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+     $(document).ready(function() {
+       $('#sidebarCollapse').on('click', function() {
+         $('#sidebar').toggleClass('active');
+       });
+     });
+
+   </script>
+   <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+   <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+   <script src="js/config.js"></script>
+   <script src="js/config-users.js"></script>
+   <script src="js/cognito-auth.js"></script>
+   <script src="js/ride.js"></script>
+   <script src="js/get-users.js"></script>
+  </body>
+</html>

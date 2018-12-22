@@ -1,0 +1,82 @@
+SOM
+
+Invoke URL - https://citd078vva.execute-api.us-east-1.amazonaws.com/default/SOM?
+
+//GET item(s) by attribute
+    just query strings
+
+    TableName=Sales_Order&id=d769cb9a-4e23-49f7-988c-0e8bf11ad9ea&
+    attribute=Customer_ID&Type=getByAttribute
+
+//GET whole table
+    TableName=Sales_Order
+	
+//GET single item by key
+    TableName=Sales_Order&id=801&Type=getItem
+
+
+
+//UPDATE MULTIPLE VALUES
+    query string----   TableName=Sales_Order
+
+"body":
+{
+    "TableName": "Sales_Order",
+    "Key": {
+      "Sales_Order_Number": 801
+    },   //For single value update only include one condition below
+    "UpdateExpression": "set Payment_Method = :a, Customer_ID = :b", 
+    "ExpressionAttributeValues": {
+      ":a": "PayPal",
+      ":b": "23.42"
+    },
+    "ReturnValues": "UPDATED_NEW"
+}
+
+
+
+//POST
+    query string----   TableName=Sales_Order
+
+"body":
+{
+    "TableName": "Sales_Order",
+    "Item": {
+      "Customer_ID": "d769cb9a-4e23-49f7-988c-0e8bf11ad9ea",
+      "Date": "10-8-2018",
+      "Payment_Method": "Credit",
+      "Product_Design": [
+        {
+          "Product_Serial_Number": "BLU510",
+          "Quantity": 1
+        },
+        {
+          "Product_Serial_Number": "YEL671",
+          "Quantity": 1
+        }
+      ],
+      "Sales_Order_Number": 801,
+      "Shipping_Information": {
+        "Shipping_Address": "123 Fake St",
+        "Shipping_City": "Philadelphia, PA",
+        "Shipping_Country": "US",
+        "Shipping_Email": "mrm6068@psu.edu",
+        "Shipping_Name": "Ricky Zhao",
+        "Shipping_Phone_Number": "6463383108",
+        "Shipping_State": "PA",
+        "Shipping_Zip_Code": "123"
+      },
+      "Total": "23.40"
+    }
+  }
+  
+//Delete
+    query string----   TableName=Sales_Order
+
+"body": 
+{
+    "TableName": "Sales_Order",
+    "Key": {
+      "Sales_Order_Number": 801 //Key
+    }
+}

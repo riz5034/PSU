@@ -1,0 +1,32 @@
+
+import pika
+import sys
+import logging
+import datetime
+import time
+sys.path.append("../")
+from App5.curlfeed import CurlFeed
+
+class App4SendRabbitmq(object):
+	global jsonPayload
+
+
+	def get_payload(self, payload):
+		try:
+                	jsonPayload = format(payload)
+                	print(jsonPayload)
+                	print("Connecting to the localhost...")
+                	time.sleep(2)
+                	connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
+                	channel = connection.channel()
+                	print("Successfully connected to the queue channel...")
+                	time.sleep(1)
+                	channel.queue_declare(queue='Hello Team2!')
+                	channel.basic_publish(exchange='',
+                                routing_key='Hello', body=jsonPayload)
+                	print(" [x] Sent the payload back to app1.")			curlFeed = CurlFeed("App4", "Success", "Successfully Sent rabbitMq paylaod"			
+connection.close()
+		except Exception as e:
+        		print(e)
+
+

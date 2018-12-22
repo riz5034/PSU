@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewData["Title"] = "EmployeeSearch";
+}
+@model WorkHourTracker.Web.Models.EmployeeSearchInput
+
+<h2>Employee Search</h2>
+
+<div>
+    @if (TempData.Peek("NoEmployeeFound") != null)
+    {
+        <p style="color: red">@TempData["NoEmployeeFound"].ToString()</p>
+    }
+</div>
+<div>
+    @if (TempData.Peek("EmployeeSearchInvalid") != null)
+    {
+        foreach (var message in (string[])TempData["EmployeeSearchInvalid"])
+        {
+            <p style="color: red">@message</p>
+        }
+    }
+</div>
+
+<p>Enter the UserName of the Employee you wish to view information on</p>
+
+<form asp-controller="ProjectManager" asp-action="GetEmployeeSearch">
+    <div>
+        <input asp-for="SearchedEmployee" type="text" />
+    </div>
+
+    <div>
+        <input type="submit" class="btn-success" value="Search" />
+    </div>
+</form>
+

@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "ProjectSearch";
+}
+@model ProjectSearchInput
+
+<h2>Project Search</h2>
+
+@if (TempData.Peek("ProjectSearchError") != null)
+{
+    <p style="color:red">@TempData["ProjectSearchError"].ToString()</p>
+}
+
+<p>
+    Search by Project Name or Project Code Name to view project level information such as:
+    Employees on the project, their capacity, and the grand total hours worked on the project.
+</p>
+
+<form asp-controller="ProjectManager" asp-action="DisplayProjectSearch">
+    <div>
+        Project Name or Project Code Name:
+        <input asp-for="SearchedProject" type="text" placeholder="Project X" />
+    </div>
+    <div>
+        <input type="submit" class="btn-success" />
+    </div>
+</form>
+

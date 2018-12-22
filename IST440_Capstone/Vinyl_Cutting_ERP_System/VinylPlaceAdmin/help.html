@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+
+    <title>Vinyl Place ERP System</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="topnav-Left">
+                    <a href="index.html" class="active"><img src="img/logo.png" alt="logo" style="width:47px;height: 51px;padding-bottom: 4px;"></a>
+                    <h1 style="display: inline;">Vinyl Place</h1>
+                </div>
+
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="#" id="signOut">Sign Out</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="sidebar">
+                <ul class="nav nav-sidebar">
+                    <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="customer.html">Customers</a></li>
+                    <li><a href="sales.html">Sales Order</a></li>
+                    <li><a href="viewpurchase.html">Purchase Order</a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a href="workorder.html">Work Order</a></li>
+                    <li><a href="invoice.html">Invoices</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="help.html">Help</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="col-sm-12 main">
+          <div class="row">
+                    <div class="block-heading text-center">
+                        <h1>FAQ</h1>
+                        <h2>Search out FAQs or browse by category below</h2>
+                    </div>
+                    <div class="container">
+                        <br />
+                        <div class="row justify-content-center">
+                            <div class="search">
+                                <form class="search-form">
+                                    <input id="myInput" type="text" placeholder="Search...">
+                                    <input id="myInput" type="submit" value="Submit">
+                                </form>
+                            </div>
+                            <!--end of col-->
+                        </div>
+                    </div>
+
+
+                        <!--
+                        <div class="alert alert-warning alert-dismissible" role="alert">
+                            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            If you cannot find an answer to your question, make sure to contact us.
+                        </div>
+-->
+
+                        <br />
+                    <div class="container">
+
+                        <div class="" id="accordion">
+                            <div class="faqHeader">		<h3>General questions</h3></div>
+                            <div class="accordion-bral">
+
+
+                                <div id="myDIV">
+                                    <!-- accordion item 1 -- start -->
+                                    <input class="ac-input" id="ac-1" name="accordion-1" type="checkbox" />
+                                    <label class="ac-label" for="ac-1">How do you log into the administrative side for the ERP?<i></i></label>
+                                    <div class="article ac-content">
+                                        <p>Type in the given username: admin. Type in the given password: qadERP18!. </p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 1 -- end -->
+                                <div id="myDIV">
+                                    <!-- accordion item 2 -- start -->
+                                    <input class="ac-input" id="ac-2" name="accordion-2" type="checkbox" />
+                                    <label class="ac-label" for="ac-2">How would you reset the admin password?
+                                        <i></i></label>
+                                    <div class="article ac-content">
+                                        <p>As of right now the password cannot be reset. Since only admins are allowed to access this part of the ERP application. The ability to reset the administrative password can be changed through Cognito.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 2 -- end -->
+                                <div id="myDIV">
+                                    <!-- accordion item 3 -- start -->
+                                    <input class="ac-input" id="ac-3" name="accordion-3" type="checkbox" />
+                                    <label class="ac-label" for="ac-3">What is shown the dashboard/homepage?
+
+                                        <i></i></label>
+                                    <div class="article ac-content">
+                                        <p>The dashboard displays buttons, which is also reflected in the navigation bar in the left side navigation.
+                                            The dashboard also displays statistics regarding purchasing, sales and inventory management.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 3 -- end -->
+								<div id="myDIV">
+                                    <!-- accordion item 4 -- start -->
+                                    <input class="ac-input" id="ac-4" name="accordion-4" type="checkbox" />
+                                    <label class="ac-label" for="ac-4">How do you sign out of the account?
+
+                                        <i></i></label>
+                                    <div class="article ac-content">
+                                        <p>Click the sign out button on the top right hand corner of the page.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 4 -- end -->
+
+                                <div class="faqHeader">		<h3>Customers</h3></div>
+                            <div class="accordion-bral">
+
+							<div id="myDIV">
+                                    <!-- accordion item 5 -- start -->
+                                    <input class="ac-input" id="ac-5" name="accordion-5" type="checkbox" />
+                                    <label class="ac-label" for="ac-5">How do you view current list of customers?<i></i></label>
+                                    <div class="article ac-content">
+                                            <p>Click on the customers button, and a table of current customers saved into the Cognito user pool will be displayed.
+All the customer's information that is saved that was updated via their account page with all the same fields is shown to the administrator.
+To check on the status of the customer's account to scroll the table to the right and check the status to see if confirmed or unconfirmed.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 5 -- end -->
+								
+							<div id="myDIV">
+                                    <!-- accordion item 6 -- start -->
+                                    <input class="ac-input" id="ac-6" name="accordion-6" type="checkbox" />
+                                    <label class="ac-label" for="ac-6">Can you create a customer account from the administrative side?<i></i></label>
+                                    <div class="article ac-content">
+                                        <p>Yes, you can do it by filling out all the fields, after clicking on the Create button below the fields. 
+This will be done seeing you entered in all the field information correctly.
+The new customer account will be saved to the Cognito user pool, and the view customers table should update with that new account.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 6 -- end -->
+								
+							<div id="myDIV">
+                                    <!-- accordion item 7 -- start -->
+                                    <input class="ac-input" id="ac-7" name="accordion-7" type="checkbox" />
+                                    <label class="ac-label" for="ac-7">How do you search for customers?<i></i></label>
+                                    <div class="article ac-content">
+                                        <p>Click on the Search tab on the right side of the page. 
+Type in an field and click on search and right below it it should filter out the results of what was searched in the table.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 7 -- end -->
+								
+							<div id="myDIV">
+                                    <!-- accordion item 8 -- start -->
+                                    <input class="ac-input" id="ac-8" name="accordion-8" type="checkbox" />
+                                    <label class="ac-label" for="ac-8">How do you update customer information?<i></i></label>
+                                    <div class="article ac-content">
+                                        <p>Click on the Update tab, search for the customer id by looking through the table of customers. 
+Enter in the information in the fields in which you want to update, then click on the update button below the fields to update. </p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 8 -- end -->
+							
+							<div id="myDIV">
+                                    <!-- accordion item 9 -- start -->
+                                    <input class="ac-input" id="ac-9" name="accordion-9" type="checkbox" />
+                                    <label class="ac-label" for="ac-9">How do you delete a customer?<i></i></label>
+                                    <div class="article ac-content">
+                                        <p>Click on the Delete tab, enter in the email of the account you want to delete then click the delete button. 
+The email of the account created should then be deleted in the customers Cognito user pool.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 9 -- end -->
+							
+                            </div>
+
+                                <div class="faqHeader">		<h3>Sales Orders</h3></div>
+                            <div class="accordion-bral">
+							
+							<div id="myDIV">
+                                <!-- accordion item 10 -- start -->
+                                <input class="ac-input" id="ac-10" name="accordion-10" type="checkbox" />
+                                <label class="ac-label" for="ac-10">How do you view current list of sales orders?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>Click on the sales order button, and a table of current sales orders automatically generated by the customer making the purchase.
+All the sales order information that was created and saved with all the same fields is shown to the administrator.
+To check on the status of the sales order to scroll the table to the right and check the status.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 10 -- end -->
+								
+							<div id="myDIV">
+                                <!-- accordion item 11 -- start -->
+                                <input class="ac-input" id="ac-11" name="accordion-11" type="checkbox" />
+                                <label class="ac-label" for="ac-11">Can you create a sales order from the administrative side?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>Yes, you can do it by filling out all the fields, after clicking on the Create button below the fields.
+This will be done seeing you entered in all the field information correctly, and it should be updated in the Sales Orders table.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 11 -- end -->	
+
+							<div id="myDIV">
+                                <!-- accordion item 12 -- start -->
+                                <input class="ac-input" id="ac-12" name="accordion-12" type="checkbox" />
+                                <label class="ac-label" for="ac-12">How do you search for sales orders?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>Click on the Search tab on the right side of the page. 
+Type in an field and click on search and right below it it should filter out the results of what was searched in the table.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 12 -- end -->		
+							
+							<div id="myDIV">
+                                <!-- accordion item 13 -- start -->
+                                <input class="ac-input" id="ac-13" name="accordion-13" type="checkbox" />
+                                <label class="ac-label" for="ac-13">How do you update sales order information?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>Click on the Update tab, search for the sales order number by looking through the table of sales orders. 
+Enter in the information in the fields in which you want to update, then click on the update button below the fields to update.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 13 -- end -->	
+								
+														
+							<div id="myDIV">
+                                <!-- accordion item 14 -- start -->
+                                <input class="ac-input" id="ac-14" name="accordion-14" type="checkbox" />
+                                <label class="ac-label" for="ac-14">How do you delete a sales order?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>Click on the Delete tab, enter in the sales order number of the order you want to delete then click the delete button. </p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 14 -- end -->	
+								
+							</div>
+							
+                                <div class="faqHeader">		<h3>Purchase Orders</h3></div>
+                        <div class="accordion-bral">
+						
+							<div id="myDIV">
+                                <!-- accordion item 15 -- start -->
+                                <input class="ac-input" id="ac-15" name="accordion-15" type="checkbox" />
+                                <label class="ac-label" for="ac-15">How do you view current list of purchase orders?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>Click on the purchase order button. 
+All the purchase order information available should be displayed in the table.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 15 -- end -->	
+							
+							<div id="myDIV">
+                                <!-- accordion item 16 -- start -->
+                                <input class="ac-input" id="ac-16" name="accordion-16" type="checkbox" />
+                                <label class="ac-label" for="ac-16">How do you you create a purchase order from the administrative side?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>You can do it by filling out all the fields, after clicking on the Create button below the fields.
+After creating it should be updated in the Purchase Orders table. </p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 16 -- end -->	
+								
+							<div id="myDIV">
+                                <!-- accordion item 17 -- start -->
+                                <input class="ac-input" id="ac-17" name="accordion-17" type="checkbox" />
+                                <label class="ac-label" for="ac-17">How do you search for purchase orders?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>Click on the Search tab on the right side of the page. 
+Type in an field and click on search and right below it it should filter out the results of what was searched in the table.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 17 -- end -->	
+							
+							<div id="myDIV">
+                                <!-- accordion item 18 -- start -->
+                                <input class="ac-input" id="ac-18" name="accordion-18" type="checkbox" />
+                                <label class="ac-label" for="ac-18">How do you update purchase order information?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>Click on the Update tab, search for the purchase order number by looking through the table of purchase orders. 
+Enter in the information in the fields in which you want to update, then click on the update button below the fields to update.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 18 -- end -->	
+								
+														
+							<div id="myDIV">
+                                <!-- accordion item 19 -- start -->
+                                <input class="ac-input" id="ac-19" name="accordion-19" type="checkbox" />
+                                <label class="ac-label" for="ac-19">How do you delete a purchase order?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>Click on the Delete tab, enter in the purchase order number of the order you want to delete then click the delete button. </p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 19 -- end -->	
+                        </div>
+						
+                                <div class="faqHeader">		<h3>Inventory</h3></div>
+                            <div class="accordion-bral">
+							
+							<div id="myDIV">
+                                <!-- accordion item 20 -- start -->
+                                <input class="ac-input" id="ac-20" name="accordion-20" type="checkbox" />
+                                <label class="ac-label" for="ac-20">How do you view current list of inventory?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>Click on the inventory button.
+All the inventory information available should be displayed in the table.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 20 -- end -->	
+							
+							<div id="myDIV">
+                                <!-- accordion item 21 -- start -->
+                                <input class="ac-input" id="ac-21" name="accordion-21" type="checkbox" />
+                                <label class="ac-label" for="ac-21">How do you you create inventory from the administrative side?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>You can do it by filling out all the fields, and clicking on the Create button below the fields.
+After creating it should be updated in the inventory table. </p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 21 -- end -->	
+								
+							<div id="myDIV">
+                                <!-- accordion item 22 -- start -->
+                                <input class="ac-input" id="ac-22" name="accordion-22" type="checkbox" />
+                                <label class="ac-label" for="ac-22">How do you search for inventory?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>Click on the Search tab on the right side of the page. 
+Type in an field and click on search and right below it it should filter out the results of what was searched in the table.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 22 -- end -->	
+							
+							<div id="myDIV">
+                                <!-- accordion item 23 -- start -->
+                                <input class="ac-input" id="ac-23" name="accordion-23" type="checkbox" />
+                                <label class="ac-label" for="ac-23">How do you update inventory information?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>Click on the Update tab, search for the material id represented by the inventory table. 
+Enter in the information in the fields in which you want to update, then click on the update button below the fields to update.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 23 -- end -->	
+								
+														
+							<div id="myDIV">
+                                <!-- accordion item 24 -- start -->
+                                <input class="ac-input" id="ac-24" name="accordion-24" type="checkbox" />
+                                <label class="ac-label" for="ac-24">How do you delete an item from the inventory?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>Click on the Delete tab, enter in the material id you want to delete then click the delete button. </p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 24 -- end -->	
+								
+							
+                                <div class="faqHeader">		<h3>Work Orders</h3></div>
+                        <div class="accordion-bral">
+						   
+						   	<div id="myDIV">
+                                <!-- accordion item 25 -- start -->
+                                <input class="ac-input" id="ac-25" name="accordion-25" type="checkbox" />
+                                <label class="ac-label" for="ac-25">How do you view current list of work orders?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>Click on the work order button.
+All the work order information available should be displayed in the table.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 25 -- end -->	
+							
+							<div id="myDIV">
+                                <!-- accordion item 26 -- start -->
+                                <input class="ac-input" id="ac-26" name="accordion-26" type="checkbox" />
+                                <label class="ac-label" for="ac-26">How do you you create a work order from the administrative side?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>You can do it by filling out all the fields, and clicking on the Create button below the fields.
+After creating it should be updated in the work orders table.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 26 -- end -->	
+								
+							<div id="myDIV">
+                                <!-- accordion item 27 -- start -->
+                                <input class="ac-input" id="ac-27" name="accordion-27" type="checkbox" />
+                                <label class="ac-label" for="ac-27">How do you search for work orders?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>Click on the Search tab on the right side of the page. 
+Type in an field and click on search and right below it it should filter out the results of what was searched in the table.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 27 -- end -->	
+							
+							<div id="myDIV">
+                                <!-- accordion item 28 -- start -->
+                                <input class="ac-input" id="ac-28" name="accordion-28" type="checkbox" />
+                                <label class="ac-label" for="ac-28">How do you update work order information?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>Click on the Update tab, search for the work order number represented by the work order table. 
+Enter in the information in the fields in which you want to update, then click on the update button below the fields to update.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 28 -- end -->	
+								
+														
+							<div id="myDIV">
+                                <!-- accordion item 29 -- start -->
+                                <input class="ac-input" id="ac-29" name="accordion-29" type="checkbox" />
+                                <label class="ac-label" for="ac-29">How do you delete a work order?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>Click on the Delete tab, enter in the work order number you want to delete then click the delete button. </p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 29 -- end -->	
+							
+                            <div class="faqHeader">		<h3>Invoices</h3></div>
+                        <div class="accordion-bral">
+							
+						<div id="myDIV">
+                                <!-- accordion item 30 -- start -->
+                                <input class="ac-input" id="ac-30" name="accordion-30" type="checkbox" />
+                                <label class="ac-label" for="ac-30">How do you view current list of invoices?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>Click on the invoices button.
+All the invoice information available should be displayed in the table.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 30 -- end -->	
+							
+							<div id="myDIV">
+                                <!-- accordion item 31 -- start -->
+                                <input class="ac-input" id="ac-31" name="accordion-31" type="checkbox" />
+                                <label class="ac-label" for="ac-31">How do you search for an invoice? <i></i></label>
+                                <div class="article ac-content">
+                                    <p>Click on the search tab on the right side of the page. 
+Type in an field and click on search and right below it it should filter out the results of what was searched in the table.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 31 -- end -->	
+								
+														
+							<div id="myDIV">
+                                <!-- accordion item 32 -- start -->
+                                <input class="ac-input" id="ac-32" name="accordion-32" type="checkbox" />
+                                <label class="ac-label" for="ac-32">How do you delete an invoice?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>Click on the Delete tab, enter in the sales order number of the invoice you want to delete then click the delete button. </p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 32 -- end -->	
+							
+                            <div class="faqHeader">		<h3>Products</h3></div>
+                        <div class="accordion-bral">
+						
+						<div id="myDIV">
+                                <!-- accordion item 33 -- start -->
+                                <input class="ac-input" id="ac-33" name="accordion-33" type="checkbox" />
+                                <label class="ac-label" for="ac-33">How do you view current list of products?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>Click on the products button.
+All the product information available should be displayed in the table.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 33 -- end -->
+												
+						<div id="myDIV">
+                                <!-- accordion item 34 -- start -->
+                                <input class="ac-input" id="ac-34" name="accordion-34" type="checkbox" />
+                                <label class="ac-label" for="ac-34">How do you you create products from the administrative side?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>You can do it by filling out all the fields, and clicking on the Create button below the fields.
+After creating it should be updated in the products table.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 34 -- end -->
+								
+					<div id="myDIV">
+                                <!-- accordion item 35 -- start -->
+                                <input class="ac-input" id="ac-35" name="accordion-35" type="checkbox" />
+                                <label class="ac-label" for="ac-35">How do you search for a product?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>Click on the Search tab on the right side of the page. 
+Type in an field and click on search and right below it it should filter out the results of what was searched in the table.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 35 -- end -->
+					
+					<div id="myDIV">
+                                <!-- accordion item 36 -- start -->
+                                <input class="ac-input" id="ac-36" name="accordion-36" type="checkbox" />
+                                <label class="ac-label" for="ac-36">How do you update product information?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>Click on the Update tab, search for the product serial number represented by the products table. 
+Enter in the information in the fields in which you want to update, then click on the update button below the fields to update.</p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 36 -- end -->
+						
+						
+					<div id="myDIV">
+                                <!-- accordion item 37 -- start -->
+                                <input class="ac-input" id="ac-37" name="accordion-37" type="checkbox" />
+                                <label class="ac-label" for="ac-37">How do you delete a product?<i></i></label>
+                                <div class="article ac-content">
+                                    <p>Click on the Delete tab, enter in the product serial number you want to delete then click the delete button. </p>
+
+                                    </div>
+                                </div>
+                                <!-- accordion item 37 -- end -->
+							</div>
+							</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="authTokenModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="authToken">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Your Auth Token</h4>
+                        </div>
+                        <div class="modal-body">
+                            <textarea class="authToken"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+
+    </script>
+
+    <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+    <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/cognito-auth.js"></script>
+    <script src="js/ride.js"></script>
+    <script src="js/search.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+
+    <title>Vinyl Place ERP System</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    
+   
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"></a>
+            <h1 style="display: inline;">Vinyl Place</h1>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            <li><a href="#" id="signOut">Sign Out</a></li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+            <li><a href="customer.html">Customers</a></li>
+            <li><a href="sales.html">Sales Order</a></li>
+            <li><a href="viewpurchase.html">Purchase Order</a></li>
+              <li><a href="inventory.html">Inventory</a></li>
+              <li><a href="workorder.html">Work Order</a></li>
+            <li><a href="invoice.html">Invoices</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="help.html">Help</a></li>
+
+          </ul>
+        
+        </div>
+        
+        <div class="col-sm-12 main">
+          <div class="row">
+            <h1 class="page-header">Invoice</h1>
+
+              <div class="container">
+         <div class="card">
+            <div class="card-header">
+               Invoice
+               <strong>01/01/01/2018</strong>
+               <span class="float-right"> <strong>Status:</strong> Pending</span>
+            </div>
+            <div class="card-body">
+               <div class="row mb-4">
+                  <div class="col-sm-6">
+                     <h6 class="mb-3">From:</h6>
+                     <div>
+                        <strong>Webz Poland</strong>
+                     </div>
+                     <div>Madalinskiego 8</div>
+                     <div>71-101 Szczecin, Poland</div>
+                     <div>Email: info@webz.com.pl</div>
+                     <div>Phone: +48 444 666 3333</div>
+                  </div>
+                  <div class="col-sm-6">
+                     <h6 class="mb-3">To:</h6>
+                     <div>
+                        <strong>Bob Mart</strong>
+                     </div>
+                     <div>Attn: Daniel Marek</div>
+                     <div>43-190 Mikolow, Poland</div>
+                     <div>Email: marek@daniel.com</div>
+                     <div>Phone: +48 123 456 789</div>
+                  </div>
+               </div>
+               <div class="table-responsive-sm">
+                  <table class="table table-striped">
+                     <thead>
+                        <tr>
+                           <th class="center">#</th>
+                           <th>Item</th>
+                           <th>Description</th>
+                           <th class="right">Unit Cost</th>
+                           <th class="center">Qty</th>
+                           <th class="right">Total</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td class="center">1</td>
+                           <td class="left strong">Origin License</td>
+                           <td class="left">Extended License</td>
+                           <td class="right">$999,00</td>
+                           <td class="center">1</td>
+                           <td class="right">$999,00</td>
+                        </tr>
+                        <tr>
+                           <td class="center">2</td>
+                           <td class="left">Custom Services</td>
+                           <td class="left">Instalation and Customization (cost per hour)</td>
+                           <td class="right">$150,00</td>
+                           <td class="center">20</td>
+                           <td class="right">$3.000,00</td>
+                        </tr>
+                        <tr>
+                           <td class="center">3</td>
+                           <td class="left">Hosting</td>
+                           <td class="left">1 year subcription</td>
+                           <td class="right">$499,00</td>
+                           <td class="center">1</td>
+                           <td class="right">$499,00</td>
+                        </tr>
+                        <tr>
+                           <td class="center">4</td>
+                           <td class="left">Platinum Support</td>
+                           <td class="left">1 year subcription 24/7</td>
+                           <td class="right">$3.999,00</td>
+                           <td class="center">1</td>
+                           <td class="right">$3.999,00</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class="row">
+                  <div class="col-lg-4 col-sm-5">
+                  </div>
+                  <div class="col-lg-4 col-sm-5 ml-auto">
+                     <table class="table table-clear">
+                        <tbody>
+                           <tr>
+                              <td class="left">
+                                 <strong>Subtotal</strong>
+                              </td>
+                              <td class="right">$8.497,00</td>
+                           </tr>
+                           <tr>
+                              <td class="left">
+                                 <strong>Discount (20%)</strong>
+                              </td>
+                              <td class="right">$1,699,40</td>
+                           </tr>
+                           <tr>
+                              <td class="left">
+                                 <strong>VAT (10%)</strong>
+                              </td>
+                              <td class="right">$679,76</td>
+                           </tr>
+                           <tr>
+                              <td class="left">
+                                 <strong>Total</strong>
+                              </td>
+                              <td class="right">
+                                 <strong>$7.477,36</strong>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="authTokenModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="authToken">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Your Auth Token</h4>
+                </div>
+                <div class="modal-body">
+                    <textarea class="authToken"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+          </div>
+        </div>
+     
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+       <script type="text/javascript">
+         $(document).ready(function() {
+             $('#sidebarCollapse').on('click', function() {
+                 $('#sidebar').toggleClass('active');
+             });
+         });
+         
+      </script>
+      <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+    <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+    <script src="js/config.js"></script>
+      <script src="js/cognito-auth.js"></script>
+      <script src="js/ride.js"></script>
+  </body>
+</html>

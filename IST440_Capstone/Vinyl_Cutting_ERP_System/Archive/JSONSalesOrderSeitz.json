@@ -1,0 +1,27 @@
+{
+	"order_id": 1001,
+	"name": "Jon Seitz",
+	"account": "JS114",
+	"price": 13.95,
+	"ship_to": {
+		"name": "Jon Seitz",
+		"address": "123 Gargle Street",
+		"city": "Philly",
+		"state": "PA",
+		"country_code": "+1",
+		"phone": "267-555-5555",
+		"email": "insertemailhere@yahoo.com",
+		"zip": "19115"
+	},
+	"bill_to": {
+		"name": "Rusty Seitz",
+		"address": "123 Gargle Street",
+		"payment": "Credit Card",
+		"city": "Philly",
+		"state": "PA",
+		"country_code": "+1",
+		"phone": "267-777-7777",
+		"email": "rustyemailhere@yahoo.com",
+		"zip": "19115"
+	}
+}

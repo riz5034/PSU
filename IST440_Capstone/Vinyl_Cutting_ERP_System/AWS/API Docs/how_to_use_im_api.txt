@@ -1,0 +1,63 @@
+Inventory Module
+
+Invoke URL - https://4j6xf3c7w5.execute-api.us-east-1.amazonaws.com/default/IM?
+
+//GET item(s) by attribute
+    just query strings
+
+    TableName=Material&attribute=Material_Level&id=test2&Type=getByAttribute
+
+//GET whole table
+    TableName=Material
+	
+//GET single item by key, must use if getting by key
+    TableName=Material&attribute=Material_Level&id=test2&Type=getItem
+
+
+
+//UPDATE MULTIPLE VALUES
+    query string----   TableName=Material
+
+"body":
+{
+    "TableName": "Material",
+    "Key": {
+      "Material_ID": "5555"
+    },
+    "UpdateExpression": "set Material_Description = :a, Material_Level = :b",
+    "ExpressionAttributeValues": {
+      ":a": "test",
+      ":b": "test"
+    },
+    "ReturnValues": "UPDATED_NEW"
+  }
+
+
+
+//POST
+    query string----   TableName=Material
+
+"body":
+{
+    "TableName": "Material",
+    "Item": {
+        "Material_Components": "5555r",
+        "Material_Count": "555",
+        "Material_Description": "5555",
+        "Material_ID": "5555",
+        "Material_Level": "Medium",
+        "Product_Serial_Number": "CTX714",
+        "Warehouse_ID": "5555"
+    }
+}
+  
+//Delete
+    query string----   TableName=Material
+
+"body": 
+{
+    "TableName": "Material",
+    "Key": {
+      "Material_ID": "5555"
+    }
+}

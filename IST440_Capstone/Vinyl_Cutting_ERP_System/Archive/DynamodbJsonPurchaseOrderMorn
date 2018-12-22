@@ -1,0 +1,44 @@
+{
+  "approval_status": {
+    "S": "Review"
+  },
+  "company_name": {
+    "S": "Vinyl Cutting"
+  },
+  "contact_name": {
+    "S": "John Jackson"
+  },
+  "due_date": {
+    "S": "September 23, 2019"
+  },
+  "item_description": {
+    "S": "Vinyl paper"
+  },
+  "item_number": {
+    "S": "AB024"
+  },
+  "order_date": {
+    "S": "September 23, 2019"
+  },
+  "order_number": {
+    "N": "12358"
+  },
+  "order_status": {
+    "S": "APPROVED"
+  },
+  "purchase_id": {
+    "S": "Purchase Order"
+  },
+  "quantity": {
+    "N": "15"
+  },
+  "unit_price": {
+    "N": "2.99"
+  },
+  "vendor_name": {
+    "S": "MySupplier"
+  },
+  "vendor_number": {
+    "N": "20012"
+  }
+}

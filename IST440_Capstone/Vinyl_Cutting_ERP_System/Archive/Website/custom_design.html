@@ -1,0 +1,112 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Vinyl Cutting | Custom Design</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/layout.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/custom_design.js"></script>
+	</head>
+
+	<body>
+		<div class="grid-wrapper">
+		<header>
+			<div class="container">
+				<div id="branding">
+					<a href="index.html">
+						<img src="img/badge.png">
+					</a>
+				</div>
+				<nav>
+					<ul>
+						<li class="current"><a href="shop.html">Shop</a></li>
+						<li><a href="about.html">About</a></li>
+						<li ><a href="support.html">Support</a></li>
+						<li id="cart" ><a href="cart.html">Cart</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section id="main">
+			<div class="container">
+				<article id="main-col">
+					<form class="customer-order-form">
+						<h1 class="page-title">Custom Design Order</h1>
+						<label for="createTableName"><b>Type (Sales/Purchase): </b></label>
+					  	<input id ="createTableName" type="text"  name="createTableName">
+					  	<br><br>
+					    <label for="createOrderId"><b>Order ID: </b></label>
+					    <input id="createOrderId" type="text"  name="createOrderId" required>
+					    <br><br>
+					    <h4>Customer Information</h4>
+					    <label for="createFullName"><b>Full Name: </b></label>
+					    <input id ="createFullName" type="text" name="createFullName" 
+					    required>
+					    <br>
+					  	<label for="createPhone"><b>Phone: </b></label>
+					  	<input id ="createPhone" type="text"  name="createPhone" 
+					  	required>
+					  	<br>
+					    <label for="createStreetAddress"><b>Street Address: </b></label>
+					    <input id ="createStreetAddress" type="text"  name="createStreetAddress" 
+					    required>
+					    <br>
+					    <label for="createZip"><b>Zip: </b></label>
+					    <input id ="createZip" type="text"  name="createZip" 
+					    required>
+					    <br>
+					    <label for="createState"><b>State: </b></label>
+					    <input id ="createState" type="text" name="createState" 
+					    required>
+					    <br>
+					    <label for="createCountry"><b>Country: </b></label>
+					    <input id ="createCountry" type="text" name="createCountry" 
+					    required>
+					    <br>
+					    <label for="createEmail"><b>Email: </b></label>
+					    <input id ="createEmail" type="text" name="createEmail" 
+					    required>
+					    <br><br>
+					    <h4>Item Information</h4>
+					    <label for="createItem"><b>Item: </b></label>
+					    <input id ="createItem" type="text" name="createItem" 
+					    required>
+					    <br>
+					  	<label for="createItemColor"><b>Item Color: </b></label>
+					    <input id ="createItemColor" type="text" name="createItemColor" 
+					    required>
+					    <br>
+					  	<label for="createUnitOfMeasurement"><b>Unit of Measurement: </b></label>
+					  	<input id ="createUnitOfMeasurement" type="text" name="createUnitOfMeasurement" 
+					  	required>
+					  	<br>
+						  <label for="createQuantity"><b>Quantity: </b></label>
+					  	<input id ="createQuantity" type="text" name="createQuantity" 
+					  	required>
+					  	<br>
+					    <label for="createPrice"><b>Price: </b></label>
+					    <input id ="createPrice" type="text" name="createPrice" 
+					    required>
+					    <br>
+
+					    <div class="submit">
+						<br>
+						<button id="submit" onclick="sendJSON()">Submit</button>
+					</div>
+					</form>
+				</article>
+			</div>
+		</section>
+
+		<footer>
+			<p>Vinyl Cutting Copyright &copy; 2018</p>
+		</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+Processed,Req. Timestamp,Method,URL,Code,Reason,RTT,Size Resp. Header,Size Resp. Body,Highest Alert,Tags
+Successfully,Wed Dec 05 00:19:15 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/cart.html,200,OK,170,357,8210,Medium,"Form, Password, Script, Comment"
+Successfully,Wed Dec 05 00:19:15 EST 2018,GET,https://s3.amazonaws.com/robots.txt,403,Forbidden,169,238,243,,
+Successfully,Wed Dec 05 00:19:15 EST 2018,GET,https://s3.amazonaws.com/sitemap.xml,404,Not Found,46,238,301,,
+Successfully,Wed Dec 05 00:19:15 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/index.html,200,OK,32,358,10801,Medium,"Form, Password, Script, Comment"
+Successfully,Wed Dec 05 00:19:15 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/shop.html,200,OK,69,357,7114,Medium,"Form, Password, Script, Comment"
+Successfully,Wed Dec 05 00:19:16 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/about.html,200,OK,55,358,14100,Medium,"Form, Password, Script, Comment"
+Successfully,Wed Dec 05 00:19:16 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/help.html,200,OK,56,358,28297,Medium,"Form, Password, Script, Comment"
+Successfully,Wed Dec 05 00:19:16 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/custom-design.html,200,OK,56,357,9272,Medium,"Form, Password, Upload, Script, Comment"
+Successfully,Wed Dec 05 00:19:16 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/register.html,200,OK,42,358,11972,Medium,"Form, Password, Script, Comment"
+Successfully,Wed Dec 05 00:19:16 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/forgetpassword.html,403,Forbidden,82,238,243,,
+Successfully,Wed Dec 05 00:19:17 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/payment.html,200,OK,43,358,11759,Medium,"Form, Password, Script, Comment"
+Successfully,Wed Dec 05 00:19:17 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/account.html,200,OK,100,357,6947,Medium,"Form, Password, Script, Comment"
+Successfully,Wed Dec 05 00:19:17 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/contact.html,200,OK,66,358,12530,Medium,"Form, Password, Script, Comment"
+Successfully,Wed Dec 05 00:19:17 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/css/style.css,200,OK,49,357,11042,Low,Comment
+Successfully,Wed Dec 05 00:19:17 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/css/style-add.css,200,OK,43,355,592,Low,Comment
+Successfully,Wed Dec 05 00:19:17 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/css/layout.css,200,OK,58,355,354,Low,
+Successfully,Wed Dec 05 00:19:17 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/shopping-cart.css,403,Forbidden,24,238,243,,
+Successfully,Wed Dec 05 00:19:17 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/js/vendor/aws-cognito-sdk.min.js,200,OK,247,372,259628,Low,Comment
+Successfully,Wed Dec 05 00:19:17 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/js/vendor/amazon-cognito-identity.min.js,200,OK,76,371,43893,Low,Comment
+Successfully,Wed Dec 05 00:19:17 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/js/config.js,200,OK,51,369,369,Low,
+Successfully,Wed Dec 05 00:19:17 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/js/cognito-auth.js,200,OK,731,370,6948,Low,Comment
+Successfully,Wed Dec 05 00:19:17 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/js/getcurrentuser.js,200,OK,50,371,11525,Low,"Form, Password, Comment"
+Successfully,Wed Dec 05 00:19:17 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/js/cart.js,200,OK,46,370,6295,Low,Comment
+Successfully,Wed Dec 05 00:19:17 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/js/jquery.shop.js,403,Forbidden,27,238,243,,
+Not Text,Wed Dec 05 00:19:17 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/img/logo.png,200,OK,765,360,1376009,Low,Comment
+Not Text,Wed Dec 05 00:19:18 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/img/background.png,200,OK,1654,360,1446373,Low,Comment
+Not Text,Wed Dec 05 00:19:18 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/img/background2.png,200,OK,380,359,446769,Low,Comment
+Not Text,Wed Dec 05 00:19:19 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/img/background3.png,200,OK,221,359,112606,Low,Comment
+Not Text,Wed Dec 05 00:19:19 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/img/gif/panda.gif,200,OK,797,359,941380,Low,Comment
+Not Text,Wed Dec 05 00:19:20 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/img/gif/poo.gif,200,OK,821,360,1135841,Low,Comment
+Successfully,Wed Dec 05 00:19:20 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/js/vinyl-stickers.js,200,OK,78,370,1124,Low,
+Not Text,Wed Dec 05 00:19:20 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/img/gif/unicorn.gif,200,OK,1209,360,1508894,Low,Comment
+Not Text,Wed Dec 05 00:19:24 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/img/gif/chicken.gif,200,OK,530,360,1078467,Low,Comment
+Not Text,Wed Dec 05 00:19:24 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/img/team7.png,200,OK,89,358,57490,Low,Comment
+Not Text,Wed Dec 05 00:19:25 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/img/creativity.png,200,OK,57,357,2314,Low,
+Not Text,Wed Dec 05 00:19:25 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/img/world.png,200,OK,40,357,3044,Low,
+Not Text,Wed Dec 05 00:19:25 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/img/team1.png,200,OK,56,358,39968,Low,Comment
+Not Text,Wed Dec 05 00:19:25 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/img/unique.png,200,OK,37,357,1722,Low,
+Not Text,Wed Dec 05 00:19:26 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/img/team2.png,200,OK,55,358,20871,Low,
+Not Text,Wed Dec 05 00:19:26 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/img/team3.png,200,OK,161,359,298068,Low,Comment
+Not Text,Wed Dec 05 00:19:26 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/img/team4.png,200,OK,60,358,39399,Low,
+Successfully,Wed Dec 05 00:19:26 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/no_image.png,403,Forbidden,24,238,243,,
+Not Text,Wed Dec 05 00:19:27 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/img/team5.png,200,OK,177,359,182886,Low,Comment
+Not Text,Wed Dec 05 00:19:27 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/img/team9.png,200,OK,179,359,136633,Low,Comment
+Successfully,Wed Dec 05 00:19:28 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/stickers.html,403,Forbidden,31,238,243,,
+Successfully,Wed Dec 05 00:19:28 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/js/sales-order.js,200,OK,51,370,4527,Low,
+Successfully,Wed Dec 05 00:19:28 EST 2018,POST,https://s3.amazonaws.com/vinyl-cutting-dev/mail.php,405,Method Not Allowed,20,278,348,,
+Successfully,Wed Dec 05 00:19:28 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/support.html,403,Forbidden,20,238,243,,
+Successfully,Wed Dec 05 00:19:28 EST 2018,GET,https://s3.amazonaws.com/vinyl-cutting-dev/js/update_info.js,200,OK,118,370,2122,Low,
