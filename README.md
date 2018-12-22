@@ -7,7 +7,7 @@ Coursework for team projects at the Pennsylvania State University:
 	<dt>IST 311 OOD and Software Applications</dt>
 	<dd>A movie ordering system to allow users to browse movies, add movies to a cart, add food to cart, and choose theater seatings using Java and JavaFX with an MVC architecture</dd>
 	<dt>IST 411 Distributed Object Computing</dt>
-	<dd>A series of Python applications to transfer a payload using TLS, HMAC, SFTP, ORB, and RabbitMQ to create a distributed object system on a Linux environment using Python</dd>
+	<dd>A series of applications to transfer a payload using TLS, HMAC, SFTP, ORB, and RabbitMQ to create a distributed object system on a Linux environment using Python</dd>
 	<dt>IST 412 Complex Software Systems</dt>
 	<dd>A system for employers and employees to track projects and hours worked on using C# with an MVC and three layer architecture</dd>
 	<dt>IST 440 Capstone</dt>
